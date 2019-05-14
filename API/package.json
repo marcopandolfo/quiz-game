@@ -1,0 +1,32 @@
+{
+  "name": "quiz_api",
+  "version": "1.0.0",
+  "description": "Api do jogo de quiz",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/marcopandolfo/quiz_game"
+  },
+  "keywords": [
+    "quiz",
+    "game",
+    "api"
+  ],
+  "author": "Marco Antonio Pandolfo",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "consign": "^0.1.6",
+    "express": "^4.16.4",
+    "sqlite3": "^4.0.8"
+  }
+}
