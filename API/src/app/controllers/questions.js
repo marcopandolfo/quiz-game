@@ -31,4 +31,12 @@ module.exports = (app) => {
             return res.status(200).json({ question, info });
         });
     });
+
+    // DELETE
+    app.delete('/questions/:id', (req, res) => {
+        getQuestionsDao().deleteQuestion(req.params.id, (err) => {
+            if (err) return res.status(500).json(err);
+            return res.status(204).send();
+        });
+    });
 };

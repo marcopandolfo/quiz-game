@@ -16,7 +16,7 @@ QuestionsDao.prototype.getRandom = function getRandom(callback) {
 };
 
 QuestionsDao.prototype.deleteQuestion = function deleteQuestion(id, callback) {
-    this._connection.query('DELETE * FROM questions WHERE ID= ?', id, callback);
+    this._connection.query('DELETE FROM questions WHERE ID = ?', [id], callback);
 };
 
 // eslint-disable-next-line func-names
