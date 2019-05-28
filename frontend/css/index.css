@@ -1,0 +1,151 @@
+body{
+    background-color: rgba(32, 31, 31, 0.938)
+    
+}
+
+h1{
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 50px;
+    color: snow;
+    font-size: 5em;
+    margin-top: 75px;
+    margin-bottom: 20px;
+}
+
+.h1-game{
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 50px;
+    padding-top: 10px;
+    color: snow;
+    font-size: 5em;
+    margin-top: 75px;
+    margin-bottom: 20px;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: snow;
+    font-size: 24px;
+}
+
+.start-button{
+position: fixed;
+top: 60%;
+left: 45%;
+margin: 0 auto;
+}
+
+.padding-2{
+    margin-right: 20px;
+
+}
+
+.padding-3{
+    margin-left: 25px;
+}
+
+a{
+    color: #000;
+}
+
+a:hover{
+    color: snow;
+}
+
+.center{
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.input-width{
+    color: #fff;
+    padding-left: 25px; 
+    width: 500px;
+}
+
+.footer-site{
+    position: fixed;
+    bottom: 0%;
+    padding: 15px;
+    padding-right: 1165px;
+    background-color: #f8f9fa;
+}
+
+.if-you-not-registered{
+    text-align: center;
+    background-color: #f8f9fa
+}
+
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+  }
+  
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .start-game:hover{
+      color: #000;
+      
+  }
+    
+  .tamanho-3em{
+
+        font-size: 3em;
+  }
+
+  .alternativas{
+        width:350px;
+        height:150px; 
+        padding:50px;
+        margin: 50px;
+  }
+
+    .alternativas-cima{
+        margin: 28px;
+        background-color: rgba(32, 31, 31, 0.938);
+
+
+  }
+  
+    .alternativas-baixo{
+        background-color: rgba(32, 31, 31, 0.938);
+        margin-left: 15px;
+
+}
+
+.criar-conta{
+    margin-bottom: 100px;
+}
