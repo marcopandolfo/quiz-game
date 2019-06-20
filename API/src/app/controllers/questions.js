@@ -1,3 +1,4 @@
+/* eslint-disable consistent-return */
 const Question = require('../models/question');
 
 module.exports = (app) => {
@@ -18,8 +19,7 @@ module.exports = (app) => {
     app.post('/questions', (req, res) => {
         // Validate
         const errors = Question.validate(req.body);
-        if(errors.length != 0)
-            return res.status(400).send({errors: errors});
+        if (errors.length !== 0) return res.status(400).send({ errors });
 
         const question = new Question(
             req.body.question,
@@ -43,8 +43,8 @@ module.exports = (app) => {
 
     // DELETE
     app.delete('/questions/:id', (req, res) => {
-        if (isNaN(req.params.id))
-            return res.status(400).send({errors: ['invalid ID']});
+        // eslint-disable-next-line no-restricted-globals
+        if (isNaN(req.params.id)) return res.status(400).send({ errors: ['invalid ID'] });
 
         getQuestionsDao().deleteQuestion(req.params.id, (err) => {
             if (err) return res.status(500).json(err);
