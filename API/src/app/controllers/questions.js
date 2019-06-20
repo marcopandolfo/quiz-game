@@ -1,3 +1,5 @@
+const Question = require('../models/question');
+
 module.exports = (app) => {
     const getQuestionsDao = () => {
         const connection = app.infra.connectionFactory();
@@ -14,13 +16,20 @@ module.exports = (app) => {
 
     // POST
     app.post('/questions', (req, res) => {
-        const question = {
-            question: req.body.question,
-            correct_answer: req.body.correct_answer,
-            category: req.body.category,
-            incorrect_answers: req.body.incorrect_answers,
-        };
+        // Validate
+        const errors = Question.validate(req.body);
+        if(errors.length != 0)
+            return res.status(400).send({errors: errors});
 
+        const question = new Question(
+            req.body.question,
+            req.body.correct_answer,
+            req.body.category,
+            req.body.incorrect_answers,
+        );
+
+
+        // Save to DB
         getQuestionsDao().saveQuestion(question, (err, result) => {
             if (err) return res.status(500).json(err);
 
@@ -34,6 +43,9 @@ module.exports = (app) => {
 
     // DELETE
     app.delete('/questions/:id', (req, res) => {
+        if (isNaN(req.params.id))
+            return res.status(400).send({errors: ['invalid ID']});
+
         getQuestionsDao().deleteQuestion(req.params.id, (err) => {
             if (err) return res.status(500).json(err);
             return res.status(204).send();
