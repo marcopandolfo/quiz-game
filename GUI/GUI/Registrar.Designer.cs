@@ -85,6 +85,7 @@
             this.bttnRegistrar.TabIndex = 2;
             this.bttnRegistrar.Text = "Registrar";
             this.bttnRegistrar.UseVisualStyleBackColor = false;
+            this.bttnRegistrar.Click += new System.EventHandler(this.BttnRegistrar_Click);
             // 
             // label1
             // 
@@ -223,6 +224,7 @@
             this.Controls.Add(this.bttnClose);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Registrar";
             this.Text = "Registrar";
             this.ResumeLayout(false);

@@ -26,5 +26,11 @@ namespace GUI
         {
             Registrar.ActiveForm.Close();
         }
+
+        private void BttnRegistrar_Click(object sender, EventArgs e)
+        {
+            Game formGame = new Game();
+            formGame.Show();
+        }
     }
 }

@@ -18,3 +18,5 @@ C:\Users\m7-dev\Documents\quiz-game\GUI\GUI\obj\Debug\GUI.csproj.GenerateResourc
 C:\Users\m7-dev\Documents\quiz-game\GUI\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
 C:\Users\m7-dev\Documents\quiz-game\GUI\GUI\obj\Debug\GUI.exe
 C:\Users\m7-dev\Documents\quiz-game\GUI\GUI\obj\Debug\GUI.pdb
+C:\Users\m7-dev\Documents\quiz-game\GUI\GUI\obj\Debug\GUI.Game.resources
+C:\Users\m7-dev\Documents\quiz-game\GUI\GUI\obj\Debug\GUI.Registrar.resources
