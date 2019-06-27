@@ -185,7 +185,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(254, 43);
             this.button1.TabIndex = 11;
-            this.button1.Text = "Registrar";
+            this.button1.Text = "Cancelar";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // label5
