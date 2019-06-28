@@ -37,10 +37,11 @@
             this.bttnCadastrar = new System.Windows.Forms.Button();
             this.bttnCancelar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtAlternativeA = new System.Windows.Forms.TextBox();
+            this.txtAlternativeD = new System.Windows.Forms.TextBox();
+            this.txtAlternativeB = new System.Windows.Forms.TextBox();
+            this.txtAlternativeC = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // bttnMinimize
@@ -160,61 +161,64 @@
             this.label4.Text = "Digite as alternativas da questão:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button2
+            // textBox1
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(62)))), ((int)(((byte)(209)))));
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Fira Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(518, 354);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(349, 77);
-            this.button2.TabIndex = 22;
-            this.button2.Text = "Digite a opção B";
-            this.button2.UseVisualStyleBackColor = false;
+            this.textBox1.Location = new System.Drawing.Point(-15, -15);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 21;
             // 
-            // button4
+            // txtAlternativeA
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(62)))), ((int)(((byte)(209)))));
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Fira Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(518, 484);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(349, 77);
-            this.button4.TabIndex = 24;
-            this.button4.Text = "Digite a opção D";
-            this.button4.UseVisualStyleBackColor = false;
+            this.txtAlternativeA.BackColor = System.Drawing.Color.Green;
+            this.txtAlternativeA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAlternativeA.Font = new System.Drawing.Font("Fira Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAlternativeA.ForeColor = System.Drawing.Color.White;
+            this.txtAlternativeA.Location = new System.Drawing.Point(90, 358);
+            this.txtAlternativeA.Multiline = true;
+            this.txtAlternativeA.Name = "txtAlternativeA";
+            this.txtAlternativeA.Size = new System.Drawing.Size(351, 80);
+            this.txtAlternativeA.TabIndex = 22;
+            this.txtAlternativeA.Text = "Alternativa Certa";
             // 
-            // button1
+            // txtAlternativeD
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(62)))), ((int)(((byte)(209)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Fira Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(90, 484);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(349, 77);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "Digite a opção C";
-            this.button1.UseVisualStyleBackColor = false;
+            this.txtAlternativeD.BackColor = System.Drawing.Color.Red;
+            this.txtAlternativeD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAlternativeD.Font = new System.Drawing.Font("Fira Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAlternativeD.ForeColor = System.Drawing.Color.White;
+            this.txtAlternativeD.Location = new System.Drawing.Point(516, 470);
+            this.txtAlternativeD.Multiline = true;
+            this.txtAlternativeD.Name = "txtAlternativeD";
+            this.txtAlternativeD.Size = new System.Drawing.Size(351, 80);
+            this.txtAlternativeD.TabIndex = 23;
+            this.txtAlternativeD.Text = "Alternativa Errada";
             // 
-            // button3
+            // txtAlternativeB
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(62)))), ((int)(((byte)(209)))));
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Fira Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(90, 354);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(349, 77);
-            this.button3.TabIndex = 23;
-            this.button3.Text = "Digite a opção A";
-            this.button3.UseVisualStyleBackColor = false;
+            this.txtAlternativeB.BackColor = System.Drawing.Color.Red;
+            this.txtAlternativeB.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAlternativeB.Font = new System.Drawing.Font("Fira Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAlternativeB.ForeColor = System.Drawing.Color.White;
+            this.txtAlternativeB.Location = new System.Drawing.Point(516, 358);
+            this.txtAlternativeB.Multiline = true;
+            this.txtAlternativeB.Name = "txtAlternativeB";
+            this.txtAlternativeB.Size = new System.Drawing.Size(351, 80);
+            this.txtAlternativeB.TabIndex = 24;
+            this.txtAlternativeB.Text = "Alternativa Errada";
+            // 
+            // txtAlternativeC
+            // 
+            this.txtAlternativeC.BackColor = System.Drawing.Color.Red;
+            this.txtAlternativeC.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAlternativeC.Font = new System.Drawing.Font("Fira Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAlternativeC.ForeColor = System.Drawing.Color.White;
+            this.txtAlternativeC.Location = new System.Drawing.Point(90, 470);
+            this.txtAlternativeC.Multiline = true;
+            this.txtAlternativeC.Name = "txtAlternativeC";
+            this.txtAlternativeC.Size = new System.Drawing.Size(351, 80);
+            this.txtAlternativeC.TabIndex = 25;
+            this.txtAlternativeC.Text = "Alternativa Errada";
             // 
             // Questions
             // 
@@ -223,10 +227,11 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(928, 687);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtAlternativeC);
+            this.Controls.Add(this.txtAlternativeB);
+            this.Controls.Add(this.txtAlternativeD);
+            this.Controls.Add(this.txtAlternativeA);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.bttnCancelar);
             this.Controls.Add(this.bttnCadastrar);
@@ -253,9 +258,10 @@
         private System.Windows.Forms.Button bttnCadastrar;
         private System.Windows.Forms.Button bttnCancelar;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtAlternativeA;
+        private System.Windows.Forms.TextBox txtAlternativeD;
+        private System.Windows.Forms.TextBox txtAlternativeB;
+        private System.Windows.Forms.TextBox txtAlternativeC;
     }
 }
