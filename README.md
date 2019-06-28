@@ -8,6 +8,9 @@ Então esse é um projeto de um jogo de quiz que está sendo desenvolvido em Nod
 
 Nós ainda estamos bem no começo do projeto, mas já está bem adiantado. Quando estiver tudo pronto vamos colocar o processo de instalação aqui no README.md, Por enquanto nós só temos que agradecer a todos e especialmente a He4rt Developers. E bora codar galera :grey_exclamation: :exclamation: 
 
+# Contribuição ✌️
+### Contribuições são 100% bem-vindas, bastar fazer uma PR ou Issue
+
 ## Aqui vou deixar algumas imagens de como ta ficando a interface :running:
 
 ### Tela de login
