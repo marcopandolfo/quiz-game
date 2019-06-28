@@ -37,6 +37,13 @@ namespace GUI
             string AltC = txtAlternativeC.Text;
             string AltD = txtAlternativeC.Text;
             string category = "Categoria daora";
+
+            if (ValidaInputs(question, correct_answer, AltB, AltC, AltD, category))
+            {
+                MessageBoxService.ShowMessage("Houve um erro", "Nenhum dos campos podem estar vazios!");
+                return;
+            }
+
             string incorrect_answers = $"{correct_answer}/{AltB}/{AltC}/{AltD}";
 
             Question Question = new Question(question, correct_answer, category, incorrect_answers);
@@ -44,6 +51,12 @@ namespace GUI
             QuestionService.PostQuestion(Question);
 
             MessageBoxService.ShowMessage("Questão cadastrada", "Parabéns, sua questão foi cadastrada com sucesso!");
+        }
+
+        // Verifica se algum input é null ou empty e retorna true se for
+        private bool ValidaInputs(string question, string correct_answer, string altB, string altC, string altD, string category)
+        {
+            return String.IsNullOrEmpty(question) || String.IsNullOrEmpty(correct_answer) || String.IsNullOrEmpty(altB) || String.IsNullOrEmpty(altC) || String.IsNullOrEmpty(altD) || String.IsNullOrEmpty(category);
         }
     }
 }
