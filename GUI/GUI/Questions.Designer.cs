@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Questions));
             this.bttnMinimize = new System.Windows.Forms.Button();
             this.bttnClose = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.bttnCadastrar = new System.Windows.Forms.Button();
@@ -41,6 +40,7 @@
             this.txtAlternativeD = new System.Windows.Forms.TextBox();
             this.txtAlternativeB = new System.Windows.Forms.TextBox();
             this.txtAlternativeC = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // bttnMinimize
@@ -71,33 +71,17 @@
             this.bttnClose.UseVisualStyleBackColor = false;
             this.bttnClose.Click += new System.EventHandler(this.BttnClose_Click);
             // 
-            // label2
-            // 
-            this.label2.AllowDrop = true;
-            this.label2.AutoEllipsis = true;
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(62)))), ((int)(((byte)(209)))));
-            this.label2.Location = new System.Drawing.Point(84, 178);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(570, 99);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "Aqui fica aquele texto da pergunta marota, \r\nque é muito massa, tipo essa. \r\nVocê" +
-    " prefere morrer ou sentar na cabess ?";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label1
             // 
             this.label1.AllowDrop = true;
             this.label1.AutoEllipsis = true;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(84, 134);
+            this.label1.Location = new System.Drawing.Point(84, 99);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(521, 33);
+            this.label1.Size = new System.Drawing.Size(560, 33);
             this.label1.TabIndex = 16;
             this.label1.Text = "Digite a questão que deseja cadastrar: ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -130,6 +114,7 @@
             this.bttnCadastrar.TabIndex = 18;
             this.bttnCadastrar.Text = "Cadastrar";
             this.bttnCadastrar.UseVisualStyleBackColor = false;
+            this.bttnCadastrar.Click += new System.EventHandler(this.bttnCadastrar_Click);
             // 
             // bttnCancelar
             // 
@@ -212,6 +197,19 @@
             this.txtAlternativeC.TabIndex = 25;
             this.txtAlternativeC.Text = "Alternativa Errada";
             // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(90, 157);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox1.Size = new System.Drawing.Size(777, 123);
+            this.textBox1.TabIndex = 26;
+            this.textBox1.Text = "Aqui fica aquele texto da pergunta marota, \r\nque é muito massa, tipo essa. \r\nVocê" +
+    " prefere morrer ou sentar na cabess ?";
+            // 
             // Questions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -219,6 +217,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(928, 687);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.txtAlternativeC);
             this.Controls.Add(this.txtAlternativeB);
             this.Controls.Add(this.txtAlternativeD);
@@ -228,7 +227,6 @@
             this.Controls.Add(this.bttnCadastrar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.bttnClose);
             this.Controls.Add(this.bttnMinimize);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -244,7 +242,6 @@
 
         private System.Windows.Forms.Button bttnMinimize;
         private System.Windows.Forms.Button bttnClose;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button bttnCadastrar;
@@ -254,5 +251,6 @@
         private System.Windows.Forms.TextBox txtAlternativeD;
         private System.Windows.Forms.TextBox txtAlternativeB;
         private System.Windows.Forms.TextBox txtAlternativeC;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
