@@ -1,4 +1,5 @@
-﻿using GUI.util;
+﻿using GUI.services;
+using GUI.util;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -41,6 +42,8 @@ namespace GUI
             Question Question = new Question(question, correct_answer, category, incorrect_answers);
 
             QuestionService.PostQuestion(Question);
+
+            MessageBoxService.ShowMessage("Questão cadastrada", "Parabéns, sua questão foi cadastrada com sucesso!");
         }
     }
 }
