@@ -40,7 +40,7 @@
             this.txtAlternativeD = new System.Windows.Forms.TextBox();
             this.txtAlternativeB = new System.Windows.Forms.TextBox();
             this.txtAlternativeC = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBoxQuestion = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // bttnMinimize
@@ -197,17 +197,17 @@
             this.txtAlternativeC.TabIndex = 25;
             this.txtAlternativeC.Text = "Alternativa Errada";
             // 
-            // textBox1
+            // txtBoxQuestion
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(90, 157);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(777, 123);
-            this.textBox1.TabIndex = 26;
-            this.textBox1.Text = "Aqui fica aquele texto da pergunta marota, \r\nque é muito massa, tipo essa. \r\nVocê" +
+            this.txtBoxQuestion.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtBoxQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxQuestion.Location = new System.Drawing.Point(90, 157);
+            this.txtBoxQuestion.Multiline = true;
+            this.txtBoxQuestion.Name = "txtBoxQuestion";
+            this.txtBoxQuestion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtBoxQuestion.Size = new System.Drawing.Size(777, 123);
+            this.txtBoxQuestion.TabIndex = 26;
+            this.txtBoxQuestion.Text = "Aqui fica aquele texto da pergunta marota, \r\nque é muito massa, tipo essa. \r\nVocê" +
     " prefere morrer ou sentar na cabess ?";
             // 
             // Questions
@@ -217,7 +217,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(928, 687);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtBoxQuestion);
             this.Controls.Add(this.txtAlternativeC);
             this.Controls.Add(this.txtAlternativeB);
             this.Controls.Add(this.txtAlternativeD);
@@ -251,6 +251,6 @@
         private System.Windows.Forms.TextBox txtAlternativeD;
         private System.Windows.Forms.TextBox txtAlternativeB;
         private System.Windows.Forms.TextBox txtAlternativeC;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBoxQuestion;
     }
 }

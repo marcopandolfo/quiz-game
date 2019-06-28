@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GUI.util;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +26,21 @@ namespace GUI
         private void BttnClose_Click(object sender, EventArgs e)
         {
             Questions.ActiveForm.Close();
+        }
+
+        private void bttnCadastrar_Click(object sender, EventArgs e)
+        {
+            string question = txtBoxQuestion.Text.Replace("\n", String.Empty).Replace("\r", String.Empty).Replace("\t", String.Empty);
+            string correct_answer = txtAlternativeA.Text;
+            string AltB = txtAlternativeC.Text;
+            string AltC = txtAlternativeC.Text;
+            string AltD = txtAlternativeC.Text;
+            string category = "Categoria daora";
+            string incorrect_answers = $"{correct_answer}/{AltB}/{AltC}/{AltD}";
+
+            Question Question = new Question(question, correct_answer, category, incorrect_answers);
+
+            QuestionService.PostQuestion(Question);
         }
     }
 }
