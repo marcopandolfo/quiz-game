@@ -1,6 +1,11 @@
 const User = require("../models/user");
 
 module.exports = app => {
+  const getUsers = () => {
+    const connection = app.infra.connectionFactory();
+    return new app.infra.UserDAO(connection);
+  };
+
   // POST
   app.post("/users", (req, res) => {
     // Validate
@@ -15,11 +20,26 @@ module.exports = app => {
     );
 
     // Save to DB
+    getUsers().saveUser(user, (err, result) => {
+      if (err) return res.status(500).json(err);
+
+      const info = {
+        status: "CREATED",
+        insertId: result.insertId
+      };
+
+      return res.status(200).json({ user, info });
+    });
   });
 
   // DELETE
   app.delete("/users/:id", (req, res) => {
     if (isNaN(req.params.id))
       return res.status(400).send({ errors: ["invalid ID"] });
+
+    getUsers().deleteUser(req.params.id, err => {
+      if (err) return res.status(500).json(err);
+      return res.status(204).send();
+    });
   });
 };
