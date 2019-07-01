@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GUI.services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,8 +30,45 @@ namespace GUI
 
         private void BttnRegistrar_Click(object sender, EventArgs e)
         {
-            Game formGame = new Game();
-            formGame.Show();
+            string Nome = txtName.Text;
+            string Email = txtEmail.Text;
+            string Password = txtPassword.Text;
+            string ConfirmPassword = txtConfirmPassword.Text;
+
+            if (ValidatePassword(Password, ConfirmPassword))
+            {
+                MessageBoxService.ShowMessage("Erro ao registrar", "Suas senhas não são iguais");
+                return;
+            }
+
+            if (ValidateEmail(Email))
+            {
+                MessageBoxService.ShowMessage("Erro ao registrar", "Formato de email invalido");
+                return;
+            }
+
+            if (ValidateInputs(Nome, Email, Password, ConfirmPassword))
+            {
+                MessageBoxService.ShowMessage("Erro ao registrar", "Você deve preencher todos os campos");
+                return;
+            }
+
+        }
+
+        private bool ValidateEmail(string email)
+        {
+            return !email.Contains("@");
+        }
+
+        private bool ValidatePassword(string password, string confirmPassword)
+        {
+            return (password != confirmPassword);
+        }
+
+        // Verifica se algum input é null ou empty e retorna true se for
+        private bool ValidateInputs(string nome, string email, string password, string confirmPassword)
+        {
+            return String.IsNullOrEmpty(nome) || String.IsNullOrEmpty(email) || String.IsNullOrEmpty(password) || String.IsNullOrEmpty(confirmPassword);
         }
     }
 }

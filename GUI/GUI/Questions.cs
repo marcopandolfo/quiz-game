@@ -36,6 +36,7 @@ namespace GUI
             string AltB = txtAlternativeC.Text;
             string AltC = txtAlternativeC.Text;
             string AltD = txtAlternativeC.Text;
+            // TODO: txtbox for category
             string category = "Categoria daora";
 
             if (ValidaInputs(question, correct_answer, AltB, AltC, AltD, category))
