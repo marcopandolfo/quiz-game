@@ -11,6 +11,10 @@ Nós ainda estamos bem no começo do projeto, mas já está bem adiantado. Quand
 # Contribuição ✌️
 ### Contribuições são 100% bem-vindas, bastar fazer uma PR ou Issue
 
+# Coisas á implementar 🚀
+- [ ] Salvar a senha em Hash no DB
+- [ ] Serialização das tabelas no MySql ao iniciar o projeto
+
 ## Aqui vou deixar algumas imagens de como ta ficando a interface :running:
 
 ### Tela de login
