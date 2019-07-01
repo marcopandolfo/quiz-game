@@ -15,8 +15,7 @@ module.exports = app => {
     const user = new User(
       req.body.username,
       req.body.email,
-      req.body.password,
-      req.body.confirmPassword
+      req.body.password
     );
 
     // Save to DB
