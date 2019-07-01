@@ -13,7 +13,7 @@ namespace GUI.util
     {
 
         // Post
-        static public void PostQuestion(Question question)
+        static public void SaveQuestion(Question question)
         {
             var client = new RestClient(@"http://localhost:3000/questions");
             var request = new RestRequest(Method.POST);

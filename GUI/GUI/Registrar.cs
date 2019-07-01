@@ -1,4 +1,5 @@
-﻿using GUI.services;
+﻿using GUI.models;
+using GUI.services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,10 +31,16 @@ namespace GUI
 
         private void BttnRegistrar_Click(object sender, EventArgs e)
         {
-            string Nome = txtName.Text;
+            string Username = txtUsername.Text;
             string Email = txtEmail.Text;
             string Password = txtPassword.Text;
             string ConfirmPassword = txtConfirmPassword.Text;
+
+            if (ValidateInputs(Username, Email, Password, ConfirmPassword))
+            {
+                MessageBoxService.ShowMessage("Erro ao registrar", "Você deve preencher todos os campos");
+                return;
+            }
 
             if (ValidatePassword(Password, ConfirmPassword))
             {
@@ -47,11 +54,8 @@ namespace GUI
                 return;
             }
 
-            if (ValidateInputs(Nome, Email, Password, ConfirmPassword))
-            {
-                MessageBoxService.ShowMessage("Erro ao registrar", "Você deve preencher todos os campos");
-                return;
-            }
+
+            UserService.SaveUser(new User(Username, Email, Password));
 
         }
 

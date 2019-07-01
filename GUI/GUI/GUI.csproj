@@ -66,6 +66,7 @@
     <Compile Include="Game.Designer.cs">
       <DependentUpon>Game.cs</DependentUpon>
     </Compile>
+    <Compile Include="models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="models\Question.cs" />
@@ -83,6 +84,7 @@
     </Compile>
     <Compile Include="services\MessageBoxService.cs" />
     <Compile Include="services\QuestionService.cs" />
+    <Compile Include="services\UserService.cs" />
     <EmbeddedResource Include="Entrar.resx">
       <DependentUpon>Entrar.cs</DependentUpon>
     </EmbeddedResource>

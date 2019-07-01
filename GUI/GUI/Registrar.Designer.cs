@@ -33,7 +33,7 @@
             this.bttnMinimize = new System.Windows.Forms.Button();
             this.bttnRegistrar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -97,17 +97,17 @@
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label1.Location = new System.Drawing.Point(47, 191);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 25);
+            this.label1.Size = new System.Drawing.Size(116, 25);
             this.label1.TabIndex = 3;
-            this.label1.Text = "   Nome: ";
+            this.label1.Text = "   Usuário: ";
             // 
-            // txtName
+            // txtUsername
             // 
-            this.txtName.Location = new System.Drawing.Point(52, 238);
-            this.txtName.Multiline = true;
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(530, 29);
-            this.txtName.TabIndex = 4;
+            this.txtUsername.Location = new System.Drawing.Point(52, 238);
+            this.txtUsername.Multiline = true;
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(530, 29);
+            this.txtUsername.TabIndex = 4;
             // 
             // label2
             // 
@@ -217,7 +217,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bttnRegistrar);
             this.Controls.Add(this.bttnMinimize);
@@ -239,7 +239,7 @@
         private System.Windows.Forms.Button bttnMinimize;
         private System.Windows.Forms.Button bttnRegistrar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label3;

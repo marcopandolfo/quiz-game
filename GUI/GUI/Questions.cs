@@ -49,7 +49,7 @@ namespace GUI
 
             Question Question = new Question(question, correct_answer, category, incorrect_answers);
 
-            QuestionService.PostQuestion(Question);
+            QuestionService.SaveQuestion(Question);
 
             MessageBoxService.ShowMessage("Questão cadastrada", "Parabéns, sua questão foi cadastrada com sucesso!");
         }
