@@ -10,9 +10,9 @@ class User {
   static validade(body) {
     const errors = [];
 
-    if (!body.username) errors.push("username can not be empty");
-    if (!body.email) errors.push("email can not be empty");
-    if (!body.password) errors.push("password can not be empty");
+    if (!body.username) errors.push('username can not be empty');
+    if (!body.email) errors.push('email can not be empty');
+    if (!body.password) errors.push('password can not be empty');
 
     return errors;
   }

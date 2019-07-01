@@ -11,8 +11,8 @@ app.use(bodyParser.json());
 
 // Consign
 consign({ cwd: 'src\\app' })
-    .include('infra')
-    .then('controllers')
-    .into(app);
+  .include('infra')
+  .then('controllers')
+  .into(app);
 
 module.exports = app;
