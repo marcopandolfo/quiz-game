@@ -11,7 +11,7 @@ Nós ainda estamos bem no começo do projeto, mas já está bem adiantado. Quand
 # Contribuição ✌️
 ### Contribuições são 100% bem-vindas, bastar fazer uma PR ou Issue
 
-# Coisas á implementar 🚀
+# TODO List 🚀
 - [ ] Salvar a senha em Hash no DB
 - [ ] Serialização das tabelas no MySql ao iniciar o projeto
 
@@ -31,7 +31,7 @@ Nós ainda estamos bem no começo do projeto, mas já está bem adiantado. Quand
 
 ### Acessem a He4rtDevs: :exclamation: :purple_heart:
 
-[Discord He4rt](discord.io/He4rt)
+[Discord He4rt](https://discord.io/He4rt)
 
 [Twitter He4rt](https://twitter.com/He4rtDevs)
 
