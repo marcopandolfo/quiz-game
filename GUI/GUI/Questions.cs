@@ -33,10 +33,10 @@ namespace GUI
         {
             string question = txtBoxQuestion.Text.Replace("\n", String.Empty).Replace("\r", String.Empty).Replace("\t", String.Empty);
             string correct_answer = txtAlternativeA.Text;
-            string AltB = txtAlternativeC.Text;
+            string AltB = txtAlternativeB.Text;
             string AltC = txtAlternativeC.Text;
-            string AltD = txtAlternativeC.Text;
-            // TODO: txtbox for category
+            string AltD = txtAlternativeD.Text;
+            // TODO: implementar a comboBox de categoria (nome -> comboCategory)
             string category = "Categoria daora";
 
             if (ValidaInputs(question, correct_answer, AltB, AltC, AltD, category))

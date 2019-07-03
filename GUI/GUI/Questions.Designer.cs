@@ -41,6 +41,8 @@
             this.txtAlternativeB = new System.Windows.Forms.TextBox();
             this.txtAlternativeC = new System.Windows.Forms.TextBox();
             this.txtBoxQuestion = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboCategory = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // bttnMinimize
@@ -77,11 +79,11 @@
             this.label1.AutoEllipsis = true;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Fira Code", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(84, 99);
+            this.label1.Location = new System.Drawing.Point(84, 73);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(560, 33);
+            this.label1.Size = new System.Drawing.Size(639, 32);
             this.label1.TabIndex = 16;
             this.label1.Text = "Digite a questão que deseja cadastrar: ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -136,11 +138,11 @@
             this.label4.AutoEllipsis = true;
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Fira Code", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(84, 299);
+            this.label4.Location = new System.Drawing.Point(84, 236);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(446, 33);
+            this.label4.Size = new System.Drawing.Size(593, 35);
             this.label4.TabIndex = 20;
             this.label4.Text = "Digite as alternativas da questão:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -151,7 +153,7 @@
             this.txtAlternativeA.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAlternativeA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAlternativeA.ForeColor = System.Drawing.Color.White;
-            this.txtAlternativeA.Location = new System.Drawing.Point(90, 358);
+            this.txtAlternativeA.Location = new System.Drawing.Point(90, 290);
             this.txtAlternativeA.Multiline = true;
             this.txtAlternativeA.Name = "txtAlternativeA";
             this.txtAlternativeA.Size = new System.Drawing.Size(351, 80);
@@ -164,7 +166,7 @@
             this.txtAlternativeD.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAlternativeD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAlternativeD.ForeColor = System.Drawing.Color.White;
-            this.txtAlternativeD.Location = new System.Drawing.Point(516, 470);
+            this.txtAlternativeD.Location = new System.Drawing.Point(518, 403);
             this.txtAlternativeD.Multiline = true;
             this.txtAlternativeD.Name = "txtAlternativeD";
             this.txtAlternativeD.Size = new System.Drawing.Size(351, 80);
@@ -177,7 +179,7 @@
             this.txtAlternativeB.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAlternativeB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAlternativeB.ForeColor = System.Drawing.Color.White;
-            this.txtAlternativeB.Location = new System.Drawing.Point(516, 358);
+            this.txtAlternativeB.Location = new System.Drawing.Point(516, 290);
             this.txtAlternativeB.Multiline = true;
             this.txtAlternativeB.Name = "txtAlternativeB";
             this.txtAlternativeB.Size = new System.Drawing.Size(351, 80);
@@ -190,7 +192,7 @@
             this.txtAlternativeC.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAlternativeC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAlternativeC.ForeColor = System.Drawing.Color.White;
-            this.txtAlternativeC.Location = new System.Drawing.Point(90, 470);
+            this.txtAlternativeC.Location = new System.Drawing.Point(90, 403);
             this.txtAlternativeC.Multiline = true;
             this.txtAlternativeC.Name = "txtAlternativeC";
             this.txtAlternativeC.Size = new System.Drawing.Size(351, 80);
@@ -199,16 +201,48 @@
             // 
             // txtBoxQuestion
             // 
-            this.txtBoxQuestion.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.txtBoxQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxQuestion.Location = new System.Drawing.Point(90, 157);
+            this.txtBoxQuestion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(62)))), ((int)(((byte)(209)))));
+            this.txtBoxQuestion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBoxQuestion.Font = new System.Drawing.Font("Fira Code", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxQuestion.Location = new System.Drawing.Point(90, 108);
             this.txtBoxQuestion.Multiline = true;
             this.txtBoxQuestion.Name = "txtBoxQuestion";
             this.txtBoxQuestion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtBoxQuestion.Size = new System.Drawing.Size(777, 123);
+            this.txtBoxQuestion.Size = new System.Drawing.Size(779, 125);
             this.txtBoxQuestion.TabIndex = 26;
             this.txtBoxQuestion.Text = "Aqui fica aquele texto da pergunta marota, \r\nque é muito massa, tipo essa. \r\nVocê" +
     " prefere morrer ou sentar na cabess ?";
+            this.txtBoxQuestion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label2
+            // 
+            this.label2.AllowDrop = true;
+            this.label2.AutoEllipsis = true;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Fira Code", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(84, 527);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(495, 32);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Defina a categoria da questão:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // comboCategory
+            // 
+            this.comboCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboCategory.Font = new System.Drawing.Font("Fira Code", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboCategory.FormattingEnabled = true;
+            this.comboCategory.Items.AddRange(new object[] {
+            "Categoria A",
+            "Categoria B",
+            "Categoria C",
+            "Categoria D"});
+            this.comboCategory.Location = new System.Drawing.Point(576, 527);
+            this.comboCategory.Name = "comboCategory";
+            this.comboCategory.Size = new System.Drawing.Size(291, 31);
+            this.comboCategory.TabIndex = 28;
             // 
             // Questions
             // 
@@ -217,6 +251,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(928, 687);
+            this.Controls.Add(this.comboCategory);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtBoxQuestion);
             this.Controls.Add(this.txtAlternativeC);
             this.Controls.Add(this.txtAlternativeB);
@@ -252,5 +288,7 @@
         private System.Windows.Forms.TextBox txtAlternativeB;
         private System.Windows.Forms.TextBox txtAlternativeC;
         private System.Windows.Forms.TextBox txtBoxQuestion;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboCategory;
     }
 }
