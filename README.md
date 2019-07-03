@@ -20,6 +20,9 @@ Nós ainda estamos bem no começo do projeto, mas já está bem adiantado. Quand
 - [ ] Serialização das tabelas no MySql ao iniciar o projeto
 - [ ] Fazer o sistema de Log usando a lib Logger
 - [x] Fazer uma tela para escolher a categoria das questões
+- [ ] Overload no controller de get questios para categoria
+- [ ] Criar enum para as categorias
+- [ ] Overload no método de get questions para receber um (Categoria.Historia)
 - [ ] Integrar o registro de questões com a API
 - [ ] Integrar a parte principal, que são as perguntas que o usuário irá responder
 
