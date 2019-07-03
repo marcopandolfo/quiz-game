@@ -16,6 +16,7 @@ Nós ainda estamos bem no começo do projeto, mas já está bem adiantado. Quand
 
 - [ ] Salvar a senha em Hash no DB
 - [ ] Serialização das tabelas no MySql ao iniciar o projeto
+- [ ] Fazer o sistema de Log usando a lib Logger
 - [ ] Integrar o registro de questões com a API
 - [ ] Integrar a parte principal, que são as perguntas que o usuário irá responder
 
@@ -31,7 +32,7 @@ Nós ainda estamos bem no começo do projeto, mas já está bem adiantado. Quand
 
 ### INTERFACE NOVA PERGUNTA :astonished:
 
-![registrarPergunta](https://user-images.githubusercontent.com/44484286/60316124-baf33080-993f-11e9-8d56-761a1912d669.PNG)
+![registrarPergunta](https://user-images.githubusercontent.com/44484286/60554528-4d178200-9d0e-11e9-951a-e19dda182d89.PNG)
 
 ### INTERFACE PRINCIPAL DO GAME :sunglasses:
 

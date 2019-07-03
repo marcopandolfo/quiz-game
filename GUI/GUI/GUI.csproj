@@ -107,6 +107,11 @@
     <EmbeddedResource Include="Registrar.resx">
       <DependentUpon>Registrar.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Font\FIRACODE-BOLD.TTF" />
+    <None Include="Font\FIRACODE-LIGHT.TTF" />
+    <None Include="Font\FIRACODE-MEDIUM.TTF" />
+    <None Include="Font\FIRACODE-REGULAR.TTF" />
+    <None Include="Font\FIRACODE-RETINA.TTF" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
