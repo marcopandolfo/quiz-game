@@ -44,11 +44,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Fira Code", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(62)))), ((int)(((byte)(209)))));
-            this.label1.Location = new System.Drawing.Point(132, 19);
+            this.label1.Location = new System.Drawing.Point(141, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(338, 33);
+            this.label1.Size = new System.Drawing.Size(321, 35);
             this.label1.TabIndex = 0;
             this.label1.Text = "ENTRE NA SUA CONTA";
             // 
@@ -62,9 +62,9 @@
             this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label2.Location = new System.Drawing.Point(126, 238);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 25);
+            this.label2.Size = new System.Drawing.Size(110, 25);
             this.label2.TabIndex = 1;
-            this.label2.Text = "   Senha:";
+            this.label2.Text = "     Senha:";
             // 
             // label3
             // 
@@ -76,9 +76,9 @@
             this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label3.Location = new System.Drawing.Point(133, 129);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 25);
+            this.label3.Size = new System.Drawing.Size(101, 25);
             this.label3.TabIndex = 2;
-            this.label3.Text = "   Login:";
+            this.label3.Text = "     Login:";
             // 
             // bttnLogin
             // 
