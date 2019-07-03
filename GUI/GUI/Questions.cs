@@ -44,7 +44,7 @@ namespace GUI
                 return;
             }
 
-            string incorrect_answers = $"{correct_answer}/{AltB}/{AltC}/{AltD}";
+            string incorrect_answers = $"{AltB}/{AltC}/{AltD}";
 
             Question Question = new Question(question, correct_answer, category, incorrect_answers);
 

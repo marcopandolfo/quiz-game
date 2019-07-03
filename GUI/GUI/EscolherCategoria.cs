@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GUI.util;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,21 @@ namespace GUI
         public EscolherCategoria()
         {
             InitializeComponent();
+        }
+
+        // Todas
+        private void bttnCategoryAll_Click(object sender, EventArgs e)
+        {
+            Question question = QuestionService.GetRandomQuestion();
+            Game game = new Game(question);
+            game.Show();
+            this.Visible = this.Enabled = false;
+        }
+
+        // História
+        private void bttnCategoryA_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

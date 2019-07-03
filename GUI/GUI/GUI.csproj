@@ -90,6 +90,7 @@
     </Compile>
     <Compile Include="services\MessageBoxService.cs" />
     <Compile Include="services\QuestionService.cs" />
+    <Compile Include="services\RandomNumbers.cs" />
     <Compile Include="services\UserService.cs" />
     <EmbeddedResource Include="Entrar.resx">
       <DependentUpon>Entrar.cs</DependentUpon>

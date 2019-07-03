@@ -37,17 +37,18 @@
             this.bttnCategoryE = new System.Windows.Forms.Button();
             this.bttnMinimize = new System.Windows.Forms.Button();
             this.bttnClose = new System.Windows.Forms.Button();
+            this.bttnCategoryAll = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Fira Code", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(62)))), ((int)(((byte)(209)))));
             this.label1.Location = new System.Drawing.Point(118, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(372, 35);
+            this.label1.Size = new System.Drawing.Size(399, 33);
             this.label1.TabIndex = 1;
             this.label1.Text = "ESCOLHA SUA CATEGORIA";
             // 
@@ -58,11 +59,11 @@
             this.bttnCategoryC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnCategoryC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnCategoryC.ForeColor = System.Drawing.Color.White;
-            this.bttnCategoryC.Location = new System.Drawing.Point(113, 363);
+            this.bttnCategoryC.Location = new System.Drawing.Point(113, 418);
             this.bttnCategoryC.Name = "bttnCategoryC";
             this.bttnCategoryC.Size = new System.Drawing.Size(366, 44);
             this.bttnCategoryC.TabIndex = 4;
-            this.bttnCategoryC.Text = "Categoria C";
+            this.bttnCategoryC.Text = "Geografia";
             this.bttnCategoryC.UseVisualStyleBackColor = false;
             // 
             // bttnCategoryD
@@ -72,11 +73,11 @@
             this.bttnCategoryD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnCategoryD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnCategoryD.ForeColor = System.Drawing.Color.White;
-            this.bttnCategoryD.Location = new System.Drawing.Point(113, 478);
+            this.bttnCategoryD.Location = new System.Drawing.Point(113, 511);
             this.bttnCategoryD.Name = "bttnCategoryD";
             this.bttnCategoryD.Size = new System.Drawing.Size(366, 44);
             this.bttnCategoryD.TabIndex = 5;
-            this.bttnCategoryD.Text = "Categoria D";
+            this.bttnCategoryD.Text = "Ciência e Natureza";
             this.bttnCategoryD.UseVisualStyleBackColor = false;
             // 
             // bttnCategoryB
@@ -86,11 +87,11 @@
             this.bttnCategoryB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnCategoryB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnCategoryB.ForeColor = System.Drawing.Color.White;
-            this.bttnCategoryB.Location = new System.Drawing.Point(113, 248);
+            this.bttnCategoryB.Location = new System.Drawing.Point(113, 324);
             this.bttnCategoryB.Name = "bttnCategoryB";
             this.bttnCategoryB.Size = new System.Drawing.Size(366, 44);
             this.bttnCategoryB.TabIndex = 6;
-            this.bttnCategoryB.Text = "Categoria B";
+            this.bttnCategoryB.Text = "Arte e Literatura";
             this.bttnCategoryB.UseVisualStyleBackColor = false;
             // 
             // bttnCategoryA
@@ -100,12 +101,13 @@
             this.bttnCategoryA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnCategoryA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnCategoryA.ForeColor = System.Drawing.Color.White;
-            this.bttnCategoryA.Location = new System.Drawing.Point(113, 133);
+            this.bttnCategoryA.Location = new System.Drawing.Point(113, 237);
             this.bttnCategoryA.Name = "bttnCategoryA";
             this.bttnCategoryA.Size = new System.Drawing.Size(366, 44);
             this.bttnCategoryA.TabIndex = 7;
-            this.bttnCategoryA.Text = "Categoria A";
+            this.bttnCategoryA.Text = "História";
             this.bttnCategoryA.UseVisualStyleBackColor = false;
+            this.bttnCategoryA.Click += new System.EventHandler(this.bttnCategoryA_Click);
             // 
             // bttnCategoryE
             // 
@@ -118,7 +120,7 @@
             this.bttnCategoryE.Name = "bttnCategoryE";
             this.bttnCategoryE.Size = new System.Drawing.Size(366, 44);
             this.bttnCategoryE.TabIndex = 8;
-            this.bttnCategoryE.Text = "Categoria E";
+            this.bttnCategoryE.Text = "Entreterimento";
             this.bttnCategoryE.UseVisualStyleBackColor = false;
             // 
             // bttnMinimize
@@ -147,6 +149,21 @@
             this.bttnClose.TabIndex = 10;
             this.bttnClose.UseVisualStyleBackColor = false;
             // 
+            // bttnCategoryAll
+            // 
+            this.bttnCategoryAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(62)))), ((int)(((byte)(209)))));
+            this.bttnCategoryAll.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bttnCategoryAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttnCategoryAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnCategoryAll.ForeColor = System.Drawing.Color.White;
+            this.bttnCategoryAll.Location = new System.Drawing.Point(113, 149);
+            this.bttnCategoryAll.Name = "bttnCategoryAll";
+            this.bttnCategoryAll.Size = new System.Drawing.Size(366, 44);
+            this.bttnCategoryAll.TabIndex = 11;
+            this.bttnCategoryAll.Text = "Todas";
+            this.bttnCategoryAll.UseVisualStyleBackColor = false;
+            this.bttnCategoryAll.Click += new System.EventHandler(this.bttnCategoryAll_Click);
+            // 
             // EscolherCategoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -154,6 +171,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(668, 722);
+            this.Controls.Add(this.bttnCategoryAll);
             this.Controls.Add(this.bttnClose);
             this.Controls.Add(this.bttnMinimize);
             this.Controls.Add(this.bttnCategoryE);
@@ -180,5 +198,6 @@
         private System.Windows.Forms.Button bttnCategoryE;
         private System.Windows.Forms.Button bttnMinimize;
         private System.Windows.Forms.Button bttnClose;
+        private System.Windows.Forms.Button bttnCategoryAll;
     }
 }
