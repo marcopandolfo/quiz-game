@@ -36,8 +36,7 @@ namespace GUI
             string AltB = txtAlternativeB.Text;
             string AltC = txtAlternativeC.Text;
             string AltD = txtAlternativeD.Text;
-            // TODO: implementar a comboBox de categoria (nome -> comboCategory)
-            string category = "Categoria daora";
+            string category = comboCategory.Text;
 
             if (ValidaInputs(question, correct_answer, AltB, AltC, AltD, category))
             {

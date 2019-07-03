@@ -79,11 +79,11 @@
             this.label1.AutoEllipsis = true;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Fira Code", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(84, 73);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(639, 32);
+            this.label1.Size = new System.Drawing.Size(485, 31);
             this.label1.TabIndex = 16;
             this.label1.Text = "Digite a questão que deseja cadastrar: ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -138,11 +138,11 @@
             this.label4.AutoEllipsis = true;
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Fira Code", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(84, 236);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(593, 35);
+            this.label4.Size = new System.Drawing.Size(446, 33);
             this.label4.TabIndex = 20;
             this.label4.Text = "Digite as alternativas da questão:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -203,7 +203,7 @@
             // 
             this.txtBoxQuestion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(62)))), ((int)(((byte)(209)))));
             this.txtBoxQuestion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBoxQuestion.Font = new System.Drawing.Font("Fira Code", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxQuestion.Location = new System.Drawing.Point(90, 108);
             this.txtBoxQuestion.Multiline = true;
             this.txtBoxQuestion.Name = "txtBoxQuestion";
@@ -220,28 +220,30 @@
             this.label2.AutoEllipsis = true;
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Fira Code", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(84, 527);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(495, 32);
+            this.label2.Size = new System.Drawing.Size(383, 31);
             this.label2.TabIndex = 27;
             this.label2.Text = "Defina a categoria da questão:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // comboCategory
             // 
+            this.comboCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboCategory.Font = new System.Drawing.Font("Fira Code", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboCategory.FormattingEnabled = true;
             this.comboCategory.Items.AddRange(new object[] {
-            "Categoria A",
-            "Categoria B",
-            "Categoria C",
-            "Categoria D"});
+            "História",
+            "Arte e Literatura",
+            "Geografia",
+            "Ciência e Natureza",
+            "Entreterimento"});
             this.comboCategory.Location = new System.Drawing.Point(576, 527);
             this.comboCategory.Name = "comboCategory";
-            this.comboCategory.Size = new System.Drawing.Size(291, 31);
+            this.comboCategory.Size = new System.Drawing.Size(291, 32);
             this.comboCategory.TabIndex = 28;
             // 
             // Questions
