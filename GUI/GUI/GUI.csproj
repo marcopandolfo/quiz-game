@@ -60,6 +60,12 @@
     <Compile Include="Entrar.Designer.cs">
       <DependentUpon>Entrar.cs</DependentUpon>
     </Compile>
+    <Compile Include="EscolherCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EscolherCategoria.Designer.cs">
+      <DependentUpon>EscolherCategoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="Game.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     <Compile Include="services\UserService.cs" />
     <EmbeddedResource Include="Entrar.resx">
       <DependentUpon>Entrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EscolherCategoria.resx">
+      <DependentUpon>EscolherCategoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Game.resx">
       <DependentUpon>Game.cs</DependentUpon>

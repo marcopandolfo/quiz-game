@@ -1,5 +1,7 @@
 ## Quiz-Game :smiley: :space_invader:
 
+#### Projeto em construção :hammer:
+
 Então esse é um projeto de um jogo de quiz que está sendo desenvolvido em NodeJS (express) que é a parte de API e em Windows Forms (C#) que é referente a parte de GUI do projeto. O projeto por enquanto contém dois contribuidores que são:
 
 [Marco He4rt](https://github.com/marcopandolfo)
@@ -17,6 +19,7 @@ Nós ainda estamos bem no começo do projeto, mas já está bem adiantado. Quand
 - [ ] Salvar a senha em Hash no DB
 - [ ] Serialização das tabelas no MySql ao iniciar o projeto
 - [ ] Fazer o sistema de Log usando a lib Logger
+- [x] Fazer uma tela para escolher a categoria das questões
 - [ ] Integrar o registro de questões com a API
 - [ ] Integrar a parte principal, que são as perguntas que o usuário irá responder
 
@@ -33,6 +36,10 @@ Nós ainda estamos bem no começo do projeto, mas já está bem adiantado. Quand
 ### INTERFACE NOVA PERGUNTA :astonished:
 
 ![registrarPergunta](https://user-images.githubusercontent.com/44484286/60554528-4d178200-9d0e-11e9-951a-e19dda182d89.PNG)
+
+### INTERFACE PARA ESCOLHER A CATEGORIA DAS QUESTÕES :shipit:
+
+![ChooseCategory](https://user-images.githubusercontent.com/44484286/60594935-6820db00-9d7c-11e9-94ae-8dff62242260.PNG)
 
 ### INTERFACE PRINCIPAL DO GAME :sunglasses:
 
