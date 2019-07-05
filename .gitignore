@@ -2,3 +2,4 @@ API/node_modules
 GUI/.vs
 GUI/GUI/bin/Debug
 GUI/GUI/obj/Debug
+API/src/app/logs/*
