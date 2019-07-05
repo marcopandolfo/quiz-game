@@ -21,6 +21,7 @@ Nós ainda estamos bem no começo do projeto, mas já está bem adiantado. Quand
 - [ ] Endpoint para verificar se um usuario existe
 - [ ] Migrar o DAO para promises
 - [x] Fazer o sistema de Logs
+- [ ] Fazer o sistema de Logs de erros
 - [x] Fazer uma tela para escolher a categoria das questões
 - [x] Overload no método de get questions para retornar questões de uma categoria
 - [ ] Opção de pegar questôes de uma categoria especifica na GUI
