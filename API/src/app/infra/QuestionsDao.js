@@ -19,6 +19,10 @@ QuestionsDao.prototype.deleteQuestion = function deleteQuestion(id, callback) {
   this._connection.query('DELETE FROM questions WHERE ID = ?', [id], callback);
 };
 
+QuestionsDao.prototype.getQuestion = function deleteQuestion(id, callback) {
+  this._connection.query('SELECT * FROM questions WHERE category = ? ORDER BY RAND() LIMIT 1', [id], callback);
+};
+
 // eslint-disable-next-line func-names
 module.exports = function () {
   return QuestionsDao;

@@ -1,6 +1,7 @@
 /* eslint-disable consistent-return */
 const Question = require('../models/question');
 const logger = require('../../config/logger');
+const categories = require('../models/categories');
 
 module.exports = (app) => {
   const getQuestionsDao = () => {
@@ -12,6 +13,25 @@ module.exports = (app) => {
   app.get('/questions', (req, res) => {
     getQuestionsDao().getRandom((err, result) => {
       if (err) return res.status(500).json(err);
+      return res.status(200).json(result[0]);
+    });
+  });
+
+  // GET (category)
+  // 400 Se a categoria for invalida
+  // 204 Se nao tiver questions naquela categoria
+  app.get('/questions/:category', (req, res) => {
+    const category = req.params.category.toString();
+
+    if (!categories().includes(category)) {
+      return res.status(400).json({ errors: ['invalid category'] });
+    }
+
+    getQuestionsDao().getQuestion(category, (err, result) => {
+      if (err) return res.status(500).send(err);
+
+      if (!result.length) return res.status(204).send();
+
       return res.status(200).json(result[0]);
     });
   });
