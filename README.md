@@ -22,11 +22,10 @@ Nós ainda estamos bem no começo do projeto, mas já está bem adiantado. Quand
 - [ ] Migrar o DAO para promises
 - [x] Fazer o sistema de Logs
 - [x] Fazer uma tela para escolher a categoria das questões
-- [ ] Overload no controller de get questios para categoria
-- [ ] Criar enum para as categorias
-- [ ] Overload no método de get questions para receber um (Categoria.Historia)
+- [x] Overload no método de get questions para retornar questões de uma categoria
+- [ ] Opção de pegar questôes de uma categoria especifica na GUI
 - [x] Integrar o registro de questões com a API
-- [ ] Integrar a parte principal, que são as perguntas que o usuário irá responder
+- [ ] Verificar se o usuario clicou na alternativa correta (GUI)
 
 ## Aqui vou deixar algumas imagens de como ta ficando a interface :running:
 
