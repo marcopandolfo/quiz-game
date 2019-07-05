@@ -1,5 +1,6 @@
 /* eslint-disable consistent-return */
 const User = require('../models/user');
+const logger = require('../../config/logger');
 
 module.exports = (app) => {
   const getUsers = () => {
@@ -23,6 +24,7 @@ module.exports = (app) => {
         status: 'CREATED',
         insertId: result.insertId,
       };
+      logger.info('[USER CREATED]', { id: result.insertId.toString(), date: new Date().toDateString(), username: user.username });
 
       return res.status(201).json({ user, info });
     });
@@ -35,6 +37,8 @@ module.exports = (app) => {
 
     getUsers().deleteUser(req.params.id, (err) => {
       if (err) return res.status(500).json(err);
+      logger.info('[USER DELETED]', { id: req.params.id.toString(), date: new Date().toDateString() });
+
       return res.status(204).send();
     });
   });
