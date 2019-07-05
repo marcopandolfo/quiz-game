@@ -1,5 +1,7 @@
 /* eslint-disable class-methods-use-this */
 /* eslint-disable camelcase */
+const categories = require('./categories');
+
 class Question {
   constructor(question, correct_answer, category, incorrect_answers) {
     this.question = question;
@@ -15,6 +17,7 @@ class Question {
     if (!body.correct_answer) errors.push('correct_answer can not be empty');
     if (!body.category) errors.push('category can not be empty');
     if (!body.incorrect_answers || !body.incorrect_answers.includes('/')) errors.push('incorrect_answers is invalid');
+    if (!categories().includes(body.category)) errors.push('invalid category');
 
     return errors;
   }
