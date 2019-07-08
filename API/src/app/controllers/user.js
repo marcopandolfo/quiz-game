@@ -18,7 +18,11 @@ module.exports = app => {
 
     // Save to DB
     getUsers().saveUser(user, (err, result) => {
-      if (err) return res.status(500).json(err);
+      if (err) {
+        logger.error(err);
+
+        return res.status(500).send(err);
+      }
 
       const info = {
         status: "CREATED",
@@ -40,7 +44,12 @@ module.exports = app => {
       return res.status(400).send({ errors: ["invalid ID"] });
 
     getUsers().deleteUser(req.params.id, err => {
-      if (err) return res.status(500).json(err);
+      if (err) {
+        logger.error(err);
+
+        return res.status(500).send(err);
+      }
+
       logger.info("[USER DELETED]", {
         id: req.params.id.toString(),
         date: new Date().toDateString()
