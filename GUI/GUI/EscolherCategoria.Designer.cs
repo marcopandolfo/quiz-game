@@ -139,6 +139,7 @@
             this.bttnMinimize.Size = new System.Drawing.Size(49, 35);
             this.bttnMinimize.TabIndex = 9;
             this.bttnMinimize.UseVisualStyleBackColor = false;
+            this.bttnMinimize.Click += new System.EventHandler(this.BttnMinimize_Click);
             // 
             // bttnClose
             // 
@@ -152,6 +153,7 @@
             this.bttnClose.Size = new System.Drawing.Size(49, 35);
             this.bttnClose.TabIndex = 10;
             this.bttnClose.UseVisualStyleBackColor = false;
+            this.bttnClose.Click += new System.EventHandler(this.BttnClose_Click);
             // 
             // bttnCategoryAll
             // 

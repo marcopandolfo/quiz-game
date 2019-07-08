@@ -71,5 +71,15 @@ namespace GUI
             game.Show();
             this.Visible = this.Enabled = false;
         }
+
+        private void BttnClose_Click(object sender, EventArgs e)
+        {
+            EscolherCategoria.ActiveForm.Close();
+        }
+
+        private void BttnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }
