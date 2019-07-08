@@ -3,7 +3,7 @@ const User = require('../models/user');
 const logger = require('../../config/logger');
 
 module.exports = (app) => {
-  const getUsers = () => {
+  const getUsersDao = () => {
     const connection = app.infra.connectionFactory();
     return new app.infra.UserDAO(connection);
   };
@@ -17,7 +17,7 @@ module.exports = (app) => {
     const user = new User(req.body.username, req.body.email, req.body.password);
 
     // Save to DB
-    getUsers().saveUser(user, (err, result) => {
+    getUsersDao().saveUser(user, (err, result) => {
       if (err) {
         logger.error(err);
         return res.status(500).send(err);
@@ -39,7 +39,9 @@ module.exports = (app) => {
   // DELETE
   app.delete('/users/:id', (req, res) => {
     // eslint-disable-next-line no-restricted-globals
-    if (isNaN(req.params.id)) {return res.status(400).send({ errors: ["invalid ID"] });}
+    if (isNaN(req.params.id)) {
+      return res.status(400).send({ errors: ['invalid ID'] });
+    }
 
     getUsers().deleteUser(req.params.id, (err) => {
       if (err) {
@@ -53,6 +55,28 @@ module.exports = (app) => {
       });
 
       return res.status(204).send();
+    });
+  });
+
+  // GET
+  // idk if 204 code is appropriate for this case
+  app.get('/users', (req, res) => {
+    const user = {
+      email: req.body.email,
+      password: req.body.password,
+    };
+
+    getUsersDao().getUser(user, (err, result) => {
+      if (err) {
+        logger.error(err);
+        return res.status(500).json(err);
+      }
+
+      if (!result.length) {
+        return res.status(204).send();
+      }
+
+      return res.status(200).json(result[0]);
     });
   });
 };
