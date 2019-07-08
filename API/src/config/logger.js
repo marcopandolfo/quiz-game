@@ -19,7 +19,7 @@ module.exports = new winston.createLogger({
       level: 'error',
       filename: './src/app/logs/error.log',
       maxsize: 100000,
-      maxFiles:10,
-    }), 
+      maxFiles: 10,
+    }),
   ],
 });
