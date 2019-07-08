@@ -33,23 +33,23 @@ Nós ainda estamos bem no começo do projeto, mas já está bem adiantado. Quand
 
 ### INTERFACE LOGIN :satisfied:
 
-![login](https://user-images.githubusercontent.com/44484286/60316110-b6c71300-993f-11e9-86a5-1cafd9c509d3.PNG)
+![login](https://user-images.githubusercontent.com/44484286/60781368-770ae300-a118-11e9-8fbc-2c5ad488057f.PNG)
 
 ### INTERFACE NOVA CONTA :stuck_out_tongue_closed_eyes:
 
-![registrar](https://user-images.githubusercontent.com/44484286/60316119-b9296d00-993f-11e9-966e-cf61faee6378.PNG)
+![novaConta](https://user-images.githubusercontent.com/44484286/60781355-6eb2a800-a118-11e9-91e8-e346c99df6a0.PNG)
 
 ### INTERFACE NOVA PERGUNTA :astonished:
 
-![registrarPergunta](https://user-images.githubusercontent.com/44484286/60554528-4d178200-9d0e-11e9-951a-e19dda182d89.PNG)
+![registrarPergunta](https://user-images.githubusercontent.com/44484286/60781356-707c6b80-a118-11e9-90aa-a3309eb1891b.PNG)
 
 ### INTERFACE PARA ESCOLHER A CATEGORIA DAS QUESTÕES :shipit:
 
-![ChooseCategory](https://user-images.githubusercontent.com/44484286/60594935-6820db00-9d7c-11e9-94ae-8dff62242260.PNG)
+![ChooseCategory](https://user-images.githubusercontent.com/44484286/60781362-72dec580-a118-11e9-9258-28283ebaca93.PNG)
 
 ### INTERFACE PRINCIPAL DO GAME :sunglasses:
 
-![Game](https://user-images.githubusercontent.com/44484286/60316125-bd558a80-993f-11e9-9316-145b056efe66.PNG)
+![Game](https://user-images.githubusercontent.com/44484286/60781364-75d9b600-a118-11e9-9700-be87209c405b.PNG)
 
 ### Acessem a He4rtDevs: :exclamation: :purple_heart:
 

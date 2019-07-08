@@ -82,7 +82,9 @@ module.exports = (app) => {
     const questionID = req.params.id;
 
     // eslint-disable-next-line no-restricted-globals
-    if (isNaN(questionID)) { return res.status(400).send({ errors: ['invalid ID'] }); }
+    if (isNaN(questionID)) {
+      return res.status(400).send({ errors: ['invalid ID'] });
+    }
 
     getQuestionsDao().deleteQuestion(questionID, (err) => {
       if (err) {

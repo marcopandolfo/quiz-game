@@ -58,7 +58,7 @@
             this.bttnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bttnMinimize.FlatAppearance.BorderSize = 0;
             this.bttnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttnMinimize.Location = new System.Drawing.Point(843, 23);
+            this.bttnMinimize.Location = new System.Drawing.Point(820, 23);
             this.bttnMinimize.Name = "bttnMinimize";
             this.bttnMinimize.Size = new System.Drawing.Size(49, 35);
             this.bttnMinimize.TabIndex = 8;
@@ -72,7 +72,7 @@
             this.bttnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bttnClose.FlatAppearance.BorderSize = 0;
             this.bttnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttnClose.Location = new System.Drawing.Point(903, 23);
+            this.bttnClose.Location = new System.Drawing.Point(867, 23);
             this.bttnClose.Name = "bttnClose";
             this.bttnClose.Size = new System.Drawing.Size(49, 35);
             this.bttnClose.TabIndex = 9;
@@ -88,7 +88,7 @@
             this.bttn2.ForeColor = System.Drawing.Color.White;
             this.bttn2.Location = new System.Drawing.Point(486, 317);
             this.bttn2.Name = "bttn2";
-            this.bttn2.Size = new System.Drawing.Size(394, 43);
+            this.bttn2.Size = new System.Drawing.Size(394, 65);
             this.bttn2.TabIndex = 10;
             this.bttn2.Text = "Alternativa B";
             this.bttn2.UseVisualStyleBackColor = false;
@@ -102,7 +102,7 @@
             this.bttn4.ForeColor = System.Drawing.Color.White;
             this.bttn4.Location = new System.Drawing.Point(486, 449);
             this.bttn4.Name = "bttn4";
-            this.bttn4.Size = new System.Drawing.Size(394, 43);
+            this.bttn4.Size = new System.Drawing.Size(394, 65);
             this.bttn4.TabIndex = 11;
             this.bttn4.Text = "Alternativa D";
             this.bttn4.UseVisualStyleBackColor = false;
@@ -116,7 +116,7 @@
             this.bttn3.ForeColor = System.Drawing.Color.White;
             this.bttn3.Location = new System.Drawing.Point(78, 449);
             this.bttn3.Name = "bttn3";
-            this.bttn3.Size = new System.Drawing.Size(394, 43);
+            this.bttn3.Size = new System.Drawing.Size(394, 65);
             this.bttn3.TabIndex = 12;
             this.bttn3.Text = "Alternativa C";
             this.bttn3.UseVisualStyleBackColor = false;
@@ -130,7 +130,7 @@
             this.bttn1.ForeColor = System.Drawing.Color.White;
             this.bttn1.Location = new System.Drawing.Point(78, 317);
             this.bttn1.Name = "bttn1";
-            this.bttn1.Size = new System.Drawing.Size(394, 43);
+            this.bttn1.Size = new System.Drawing.Size(394, 65);
             this.bttn1.TabIndex = 13;
             this.bttn1.Text = "Alternativa A";
             this.bttn1.UseVisualStyleBackColor = false;
@@ -156,7 +156,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(972, 611);
+            this.ClientSize = new System.Drawing.Size(928, 687);
             this.Controls.Add(this.mainLabel);
             this.Controls.Add(this.bttn1);
             this.Controls.Add(this.bttn3);

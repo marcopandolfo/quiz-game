@@ -46,7 +46,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(62)))), ((int)(((byte)(209)))));
-            this.label1.Location = new System.Drawing.Point(118, 28);
+            this.label1.Location = new System.Drawing.Point(253, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(399, 33);
             this.label1.TabIndex = 1;
@@ -59,9 +59,9 @@
             this.bttnCategoryC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnCategoryC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnCategoryC.ForeColor = System.Drawing.Color.White;
-            this.bttnCategoryC.Location = new System.Drawing.Point(113, 418);
+            this.bttnCategoryC.Location = new System.Drawing.Point(71, 332);
             this.bttnCategoryC.Name = "bttnCategoryC";
-            this.bttnCategoryC.Size = new System.Drawing.Size(366, 44);
+            this.bttnCategoryC.Size = new System.Drawing.Size(366, 75);
             this.bttnCategoryC.TabIndex = 4;
             this.bttnCategoryC.Text = "Geografia";
             this.bttnCategoryC.UseVisualStyleBackColor = false;
@@ -73,9 +73,9 @@
             this.bttnCategoryD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnCategoryD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnCategoryD.ForeColor = System.Drawing.Color.White;
-            this.bttnCategoryD.Location = new System.Drawing.Point(113, 511);
+            this.bttnCategoryD.Location = new System.Drawing.Point(495, 332);
             this.bttnCategoryD.Name = "bttnCategoryD";
-            this.bttnCategoryD.Size = new System.Drawing.Size(366, 44);
+            this.bttnCategoryD.Size = new System.Drawing.Size(366, 75);
             this.bttnCategoryD.TabIndex = 5;
             this.bttnCategoryD.Text = "Ciência e Natureza";
             this.bttnCategoryD.UseVisualStyleBackColor = false;
@@ -87,9 +87,9 @@
             this.bttnCategoryB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnCategoryB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnCategoryB.ForeColor = System.Drawing.Color.White;
-            this.bttnCategoryB.Location = new System.Drawing.Point(113, 324);
+            this.bttnCategoryB.Location = new System.Drawing.Point(495, 190);
             this.bttnCategoryB.Name = "bttnCategoryB";
-            this.bttnCategoryB.Size = new System.Drawing.Size(366, 44);
+            this.bttnCategoryB.Size = new System.Drawing.Size(366, 75);
             this.bttnCategoryB.TabIndex = 6;
             this.bttnCategoryB.Text = "Arte e Literatura";
             this.bttnCategoryB.UseVisualStyleBackColor = false;
@@ -101,9 +101,9 @@
             this.bttnCategoryA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnCategoryA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnCategoryA.ForeColor = System.Drawing.Color.White;
-            this.bttnCategoryA.Location = new System.Drawing.Point(113, 237);
+            this.bttnCategoryA.Location = new System.Drawing.Point(71, 190);
             this.bttnCategoryA.Name = "bttnCategoryA";
-            this.bttnCategoryA.Size = new System.Drawing.Size(366, 44);
+            this.bttnCategoryA.Size = new System.Drawing.Size(366, 75);
             this.bttnCategoryA.TabIndex = 7;
             this.bttnCategoryA.Text = "História";
             this.bttnCategoryA.UseVisualStyleBackColor = false;
@@ -116,9 +116,9 @@
             this.bttnCategoryE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnCategoryE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnCategoryE.ForeColor = System.Drawing.Color.White;
-            this.bttnCategoryE.Location = new System.Drawing.Point(113, 593);
+            this.bttnCategoryE.Location = new System.Drawing.Point(71, 474);
             this.bttnCategoryE.Name = "bttnCategoryE";
-            this.bttnCategoryE.Size = new System.Drawing.Size(366, 44);
+            this.bttnCategoryE.Size = new System.Drawing.Size(366, 75);
             this.bttnCategoryE.TabIndex = 8;
             this.bttnCategoryE.Text = "Entreterimento";
             this.bttnCategoryE.UseVisualStyleBackColor = false;
@@ -130,7 +130,7 @@
             this.bttnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bttnMinimize.FlatAppearance.BorderSize = 0;
             this.bttnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttnMinimize.Location = new System.Drawing.Point(551, 28);
+            this.bttnMinimize.Location = new System.Drawing.Point(812, 26);
             this.bttnMinimize.Name = "bttnMinimize";
             this.bttnMinimize.Size = new System.Drawing.Size(49, 35);
             this.bttnMinimize.TabIndex = 9;
@@ -143,7 +143,7 @@
             this.bttnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bttnClose.FlatAppearance.BorderSize = 0;
             this.bttnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttnClose.Location = new System.Drawing.Point(607, 28);
+            this.bttnClose.Location = new System.Drawing.Point(867, 26);
             this.bttnClose.Name = "bttnClose";
             this.bttnClose.Size = new System.Drawing.Size(49, 35);
             this.bttnClose.TabIndex = 10;
@@ -156,9 +156,9 @@
             this.bttnCategoryAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnCategoryAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnCategoryAll.ForeColor = System.Drawing.Color.White;
-            this.bttnCategoryAll.Location = new System.Drawing.Point(113, 149);
+            this.bttnCategoryAll.Location = new System.Drawing.Point(495, 474);
             this.bttnCategoryAll.Name = "bttnCategoryAll";
-            this.bttnCategoryAll.Size = new System.Drawing.Size(366, 44);
+            this.bttnCategoryAll.Size = new System.Drawing.Size(366, 75);
             this.bttnCategoryAll.TabIndex = 11;
             this.bttnCategoryAll.Text = "Todas";
             this.bttnCategoryAll.UseVisualStyleBackColor = false;
@@ -170,7 +170,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(668, 722);
+            this.ClientSize = new System.Drawing.Size(928, 687);
             this.Controls.Add(this.bttnCategoryAll);
             this.Controls.Add(this.bttnClose);
             this.Controls.Add(this.bttnMinimize);
@@ -182,6 +182,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EscolherCategoria";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EscolherCategoria";
             this.ResumeLayout(false);
             this.PerformLayout();

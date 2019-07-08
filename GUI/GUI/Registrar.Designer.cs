@@ -51,7 +51,7 @@
             this.bttnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bttnClose.FlatAppearance.BorderSize = 0;
             this.bttnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttnClose.Location = new System.Drawing.Point(590, 25);
+            this.bttnClose.Location = new System.Drawing.Point(850, 25);
             this.bttnClose.Name = "bttnClose";
             this.bttnClose.Size = new System.Drawing.Size(57, 34);
             this.bttnClose.TabIndex = 0;
@@ -65,7 +65,7 @@
             this.bttnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bttnMinimize.FlatAppearance.BorderSize = 0;
             this.bttnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttnMinimize.Location = new System.Drawing.Point(527, 25);
+            this.bttnMinimize.Location = new System.Drawing.Point(787, 25);
             this.bttnMinimize.Name = "bttnMinimize";
             this.bttnMinimize.Size = new System.Drawing.Size(57, 34);
             this.bttnMinimize.TabIndex = 1;
@@ -79,9 +79,9 @@
             this.bttnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnRegistrar.ForeColor = System.Drawing.Color.White;
-            this.bttnRegistrar.Location = new System.Drawing.Point(52, 574);
+            this.bttnRegistrar.Location = new System.Drawing.Point(164, 574);
             this.bttnRegistrar.Name = "bttnRegistrar";
-            this.bttnRegistrar.Size = new System.Drawing.Size(254, 43);
+            this.bttnRegistrar.Size = new System.Drawing.Size(290, 43);
             this.bttnRegistrar.TabIndex = 2;
             this.bttnRegistrar.Text = "Registrar";
             this.bttnRegistrar.UseVisualStyleBackColor = false;
@@ -95,18 +95,18 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(62)))), ((int)(((byte)(209)))));
             this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(47, 191);
+            this.label1.Location = new System.Drawing.Point(159, 118);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 25);
+            this.label1.Size = new System.Drawing.Size(128, 25);
             this.label1.TabIndex = 3;
-            this.label1.Text = "   Usuário: ";
+            this.label1.Text = "     Usuário: ";
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(52, 238);
+            this.txtUsername.Location = new System.Drawing.Point(164, 169);
             this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(530, 29);
+            this.txtUsername.Size = new System.Drawing.Size(644, 36);
             this.txtUsername.TabIndex = 4;
             // 
             // label2
@@ -117,18 +117,18 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(62)))), ((int)(((byte)(209)))));
             this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
             this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2.Location = new System.Drawing.Point(47, 286);
+            this.label2.Location = new System.Drawing.Point(159, 239);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 25);
+            this.label2.Size = new System.Drawing.Size(101, 25);
             this.label2.TabIndex = 5;
-            this.label2.Text = "   Email:";
+            this.label2.Text = "     Email:";
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(52, 329);
+            this.txtEmail.Location = new System.Drawing.Point(164, 283);
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(530, 29);
+            this.txtEmail.Size = new System.Drawing.Size(644, 36);
             this.txtEmail.TabIndex = 6;
             // 
             // label3
@@ -139,11 +139,11 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(62)))), ((int)(((byte)(209)))));
             this.label3.Image = ((System.Drawing.Image)(resources.GetObject("label3.Image")));
             this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label3.Location = new System.Drawing.Point(47, 467);
+            this.label3.Location = new System.Drawing.Point(159, 471);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(228, 25);
+            this.label3.Size = new System.Drawing.Size(240, 25);
             this.label3.TabIndex = 7;
-            this.label3.Text = "   Confirme sua senha:";
+            this.label3.Text = "     Confirme sua senha:";
             // 
             // label4
             // 
@@ -153,26 +153,26 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(62)))), ((int)(((byte)(209)))));
             this.label4.Image = ((System.Drawing.Image)(resources.GetObject("label4.Image")));
             this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label4.Location = new System.Drawing.Point(47, 386);
+            this.label4.Location = new System.Drawing.Point(159, 357);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 25);
+            this.label4.Size = new System.Drawing.Size(110, 25);
             this.label4.TabIndex = 8;
-            this.label4.Text = "   Senha:";
+            this.label4.Text = "     Senha:";
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(52, 415);
+            this.txtPassword.Location = new System.Drawing.Point(164, 402);
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(530, 29);
+            this.txtPassword.Size = new System.Drawing.Size(644, 36);
             this.txtPassword.TabIndex = 9;
             // 
             // txtConfirmPassword
             // 
-            this.txtConfirmPassword.Location = new System.Drawing.Point(52, 507);
+            this.txtConfirmPassword.Location = new System.Drawing.Point(164, 513);
             this.txtConfirmPassword.Multiline = true;
             this.txtConfirmPassword.Name = "txtConfirmPassword";
-            this.txtConfirmPassword.Size = new System.Drawing.Size(530, 29);
+            this.txtConfirmPassword.Size = new System.Drawing.Size(644, 36);
             this.txtConfirmPassword.TabIndex = 10;
             // 
             // button1
@@ -182,9 +182,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(328, 574);
+            this.button1.Location = new System.Drawing.Point(518, 574);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(254, 43);
+            this.button1.Size = new System.Drawing.Size(290, 43);
             this.button1.TabIndex = 11;
             this.button1.Text = "Cancelar";
             this.button1.UseVisualStyleBackColor = false;
@@ -196,7 +196,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(62)))), ((int)(((byte)(209)))));
             this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label5.Location = new System.Drawing.Point(137, 64);
+            this.label5.Location = new System.Drawing.Point(268, 26);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(364, 33);
             this.label5.TabIndex = 12;
@@ -208,7 +208,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(659, 701);
+            this.ClientSize = new System.Drawing.Size(928, 687);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtConfirmPassword);
