@@ -43,7 +43,7 @@ module.exports = (app) => {
       return res.status(400).send({ errors: ['invalid ID'] });
     }
 
-    getUsers().deleteUser(req.params.id, (err) => {
+    getUsersDao().deleteUser(req.params.id, (err) => {
       if (err) {
         logger.error(err);
         return res.status(500).send(err);

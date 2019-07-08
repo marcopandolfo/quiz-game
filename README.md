@@ -18,7 +18,7 @@ Nós ainda estamos bem no começo do projeto, mas já está bem adiantado. Quand
 
 - [ ] Salvar a senha em Hash no DB
 - [ ] Serialização das tabelas no MySql ao iniciar o projeto
-- [ ] Endpoint para verificar se um usuario existe
+- [x] Endpoint para verificar se um usuario existe
 - [ ] Migrar o DAO para promises
 - [x] Fazer o sistema de Logs
 - [x] Fazer o sistema de Logs de erros
