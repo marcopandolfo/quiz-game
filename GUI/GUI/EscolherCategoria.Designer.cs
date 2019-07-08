@@ -65,6 +65,7 @@
             this.bttnCategoryC.TabIndex = 4;
             this.bttnCategoryC.Text = "Geografia";
             this.bttnCategoryC.UseVisualStyleBackColor = false;
+            this.bttnCategoryC.Click += new System.EventHandler(this.BttnCategoryC_Click);
             // 
             // bttnCategoryD
             // 
@@ -79,6 +80,7 @@
             this.bttnCategoryD.TabIndex = 5;
             this.bttnCategoryD.Text = "Ciência e Natureza";
             this.bttnCategoryD.UseVisualStyleBackColor = false;
+            this.bttnCategoryD.Click += new System.EventHandler(this.BttnCategoryD_Click);
             // 
             // bttnCategoryB
             // 
@@ -93,6 +95,7 @@
             this.bttnCategoryB.TabIndex = 6;
             this.bttnCategoryB.Text = "Arte e Literatura";
             this.bttnCategoryB.UseVisualStyleBackColor = false;
+            this.bttnCategoryB.Click += new System.EventHandler(this.BttnCategoryB_Click);
             // 
             // bttnCategoryA
             // 
@@ -122,6 +125,7 @@
             this.bttnCategoryE.TabIndex = 8;
             this.bttnCategoryE.Text = "Entreterimento";
             this.bttnCategoryE.UseVisualStyleBackColor = false;
+            this.bttnCategoryE.Click += new System.EventHandler(this.BttnCategoryE_Click);
             // 
             // bttnMinimize
             // 

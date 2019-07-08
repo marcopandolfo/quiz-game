@@ -34,5 +34,16 @@ namespace GUI.util
             var question = JsonConvert.DeserializeObject<Question>(response.Content);
             return question;
         }
+        
+        // GET
+        static public Question GetRandomQuestion(string category)
+        {
+            var client = new RestClient(@"http://localhost:3000/questions/:category");
+            var request = new RestRequest(Method.GET);
+            request.AddHeader("Accept", "application/json");
+            IRestResponse response = client.Execute(request);
+            var question = JsonConvert.DeserializeObject<Question>(response.Content);
+            return question;
+        }
     }
 }
