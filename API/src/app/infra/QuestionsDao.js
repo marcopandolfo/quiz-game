@@ -3,24 +3,62 @@ function QuestionsDao(connection) {
   this._connection = connection;
 }
 
-QuestionsDao.prototype.saveQuestion = function saveQuestion(question, callback) {
-  this._connection.query('INSERT INTO questions SET ?', question, callback);
+// Salvar uma questão
+QuestionsDao.prototype.saveQuestion = function saveQuestion() {
+  return new Promise((resolve, reject) => {
+    this._connection.query('INSERT INTO questions SET ?', (err, result) => {
+      if (err) return reject(err);
+
+      return resolve(result);
+    });
+  });
 };
 
-QuestionsDao.prototype.getAll = function getAll(callback) {
-  this._connection.query('SELECT * FROM questions', callback);
+// Pegar todas as questões
+QuestionsDao.prototype.getAll = function getAll() {
+  return new Promise((resolve, reject) => {
+    this._connection.query('SELECT * FROM questions', (err, result) => {
+      if (err) return reject(err);
+
+      return resolve(result);
+    });
+  });
 };
 
-QuestionsDao.prototype.getRandom = function getRandom(callback) {
-  this._connection.query('SELECT * FROM questions ORDER BY RAND() LIMIT 1', callback);
+// Pegar uma questão randomicamente
+QuestionsDao.prototype.getRandom = function getRandom() {
+  return new Promise((resolve, reject) => {
+    this._connection.query('SELECT * FROM questions ORDER BY RAND() LIMIT 1', (err, result) => {
+      if (err) return reject(err);
+
+      return resolve(result);
+    });
+  });
 };
 
-QuestionsDao.prototype.deleteQuestion = function deleteQuestion(id, callback) {
-  this._connection.query('DELETE FROM questions WHERE ID = ?', [id], callback);
+// Pegar questões de uma categoria especifica
+QuestionsDao.prototype.getQuestion = function getQuestion() {
+  return new Promise((resolve, reject) => {
+    this._connection.query(
+      'SELECT * FROM questions WHERE category = ? ORDER BY RAND() LIMIT 1',
+      (err, result) => {
+        if (err) return reject(err);
+
+        return resolve(result);
+      },
+    );
+  });
 };
 
-QuestionsDao.prototype.getQuestion = function deleteQuestion(id, callback) {
-  this._connection.query('SELECT * FROM questions WHERE category = ? ORDER BY RAND() LIMIT 1', [id], callback);
+// Deletar uma questão
+QuestionsDao.prototype.deleteQuestion = function deleteQuestion() {
+  return new Promise((resolve, reject) => {
+    this._connection.query('DELETE FROM questions WHERE ID = ?', (err, result) => {
+      if (err) return reject(err);
+
+      return resolve(result);
+    });
+  });
 };
 
 // eslint-disable-next-line func-names
