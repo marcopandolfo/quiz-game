@@ -4,9 +4,9 @@ function QuestionsDao(connection) {
 }
 
 // Salvar uma questão
-QuestionsDao.prototype.saveQuestion = function saveQuestion() {
+QuestionsDao.prototype.saveQuestion = function saveQuestion(question) {
   return new Promise((resolve, reject) => {
-    this._connection.query('INSERT INTO questions SET ?', (err, result) => {
+    this._connection.query('INSERT INTO questions SET ?', question, (err, result) => {
       if (err) return reject(err);
 
       return resolve(result);
@@ -37,10 +37,10 @@ QuestionsDao.prototype.getRandom = function getRandom() {
 };
 
 // Pegar questões de uma categoria especifica
-QuestionsDao.prototype.getQuestion = function getQuestion() {
+QuestionsDao.prototype.getQuestion = function getQuestion(category) {
   return new Promise((resolve, reject) => {
     this._connection.query(
-      'SELECT * FROM questions WHERE category = ? ORDER BY RAND() LIMIT 1',
+      'SELECT * FROM questions WHERE category = ? ORDER BY RAND() LIMIT 1', category,
       (err, result) => {
         if (err) return reject(err);
 
@@ -51,9 +51,9 @@ QuestionsDao.prototype.getQuestion = function getQuestion() {
 };
 
 // Deletar uma questão
-QuestionsDao.prototype.deleteQuestion = function deleteQuestion() {
+QuestionsDao.prototype.deleteQuestion = function deleteQuestion(id) {
   return new Promise((resolve, reject) => {
-    this._connection.query('DELETE FROM questions WHERE ID = ?', (err, result) => {
+    this._connection.query('DELETE FROM questions WHERE ID = ?', id, (err, result) => {
       if (err) return reject(err);
 
       return resolve(result);

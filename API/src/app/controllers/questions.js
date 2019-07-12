@@ -14,20 +14,17 @@ module.exports = (app) => {
 
   // GET
   app.get('/questions', (req, res) => {
-    getQuestionsDao().getRandom((err, result) => {
-      if (err) {
-        logger.error(err);
-
-        return res.status(500).send(err);
-      }
-
-      return res.status(200).json(result[0]);
-    });
+    getQuestionsDao().getRandom()
+      .then(result => res.satus(200).json(result[0]))
+      .catch((err) => {
+        logger.error(err.toString());
+        return res.status(500).json(err.toString());
+      });
   });
 
   // GET (category)
-  // 400 Se a categoria for invalida
-  // 204 Se nao tiver questions naquela categoria
+  // 400 If category is invalid
+  // 204 If there are no questions from that category
   app.get('/questions/:category', (req, res) => {
     const category = req.params.category.toString();
 
@@ -35,24 +32,26 @@ module.exports = (app) => {
       return res.status(400).json({ errors: ['invalid category'] });
     }
 
-    getQuestionsDao().getQuestion(category, (err, result) => {
-      if (err) {
-        logger.error(err);
-        return res.status(500).send(err);
-      }
+    getQuestionsDao()
+      .getQuestion(category)
+      .then((result) => {
+        if (!result.length) return res.status(204).send();
 
-      if (!result.length) return res.status(204).send();
-
-      return res.status(200).json(result[0]);
-    });
+        return res.status(200).json(result[0]);
+      })
+      .catch((err) => {
+        logger.error(err.toString());
+        return res.status(500).json(err.toString());
+      });
   });
 
   // POST
   app.post('/questions', (req, res) => {
     // Validate
     const errors = Question.validate(req.body);
-    if (errors.length !== 0) return res.status(400).send({ errors });
+    if (errors.length !== 0) return res.status(400).json({ errors });
 
+    // Question
     const question = new Question(
       req.body.question,
       req.body.correct_answer,
@@ -60,24 +59,24 @@ module.exports = (app) => {
       req.body.incorrect_answers,
     );
 
-    // Save to DB
-    getQuestionsDao().saveQuestion(question, (err, result) => {
-      if (err) {
-        logger.error(err);
-        return res.status(500).send(err);
-      }
+    getQuestionsDao().saveQuestion(question)
+      .then((result) => {
+        const info = {
+          status: 'CREATED',
+          insertId: result.insertId,
+        };
 
-      const info = {
-        status: 'CREATED',
-        insertId: result.insertId,
-      };
-      logger.info('[QUESTION CREATED]', {
-        id: result.insertId.toString(),
-        date: new Date().toDateString(),
+        logger.info('[QUESTION CREATED]', {
+          id: result.insertId.toString(),
+          date: new Date().toDateString(),
+        });
+
+        return res.status(201).json({ question, info });
+      })
+      .catch((err) => {
+        logger.error(err.toString());
+        return res.status(500).json(err.toString());
       });
-
-      return res.status(201).json({ question, info });
-    });
   });
 
   // DELETE
@@ -89,18 +88,19 @@ module.exports = (app) => {
       return res.status(400).send({ errors: ['invalid ID'] });
     }
 
-    getQuestionsDao().deleteQuestion(questionID, (err) => {
-      if (err) {
-        logger.error(err);
-        return res.status(500).send(err);
-      }
+    getQuestionsDao()
+      .deleteQuestion(questionID)
+      .then(() => {
+        logger.info('[QUESTION DELETED]', {
+          id: questionID,
+          date: new Date().toDateString(),
+        });
 
-      logger.info('[QUESTION DELETED]', {
-        id: questionID,
-        date: new Date().toDateString(),
+        return res.status(204).send();
+      })
+      .catch((err) => {
+        logger.error(err.toString());
+        return res.status(500).json(err.toString());
       });
-
-      return res.status(204).send();
-    });
   });
 };
