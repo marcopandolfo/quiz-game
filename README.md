@@ -17,6 +17,7 @@ Nós ainda estamos bem no começo do projeto, mas já está bem adiantado. Quand
 # TODO List 🚀
 
 - [ ] Salvar a senha em Hash no DB
+- [ ] Exibir os pontos e a rodada na interface principal do game
 - [ ] Fazer a parte de login do usuário
 - [x] Criando as tabelas MySql automaticamente ao iniciar o projeto
 - [x] Endpoint para verificar se um usuario existe
