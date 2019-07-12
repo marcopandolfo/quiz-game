@@ -19,24 +19,25 @@ module.exports = (app) => {
 
     const user = new User(req.body.username, req.body.email, req.body.password);
 
-    // Save to DB
-    getUsersDao().saveUser(user, (err, result) => {
-      if (err) {
-        logger.error(err);
-        return res.status(500).send(err);
-      }
+    getUsersDao().saveUser(user)
+      .then((result) => {
+        const info = {
+          status: 'CREATED',
+          insertId: result.insertId,
+        };
 
-      const info = {
-        status: 'CREATED',
-        insertId: result.insertId,
-      };
-      logger.info('[USER CREATED]', {
-        id: result.insertId.toString(),
-        date: new Date().toDateString(),
-        username: user.username,
+        logger.info('[USER CREATED]', {
+          id: result.insertId.toString(),
+          date: new Date().toDateString(),
+          username: user.username,
+        });
+
+        return res.status(201).json({ user, info });
+      })
+      .catch((err) => {
+        logger.error(err.toString());
+        return res.status(500).json(err.toString());
       });
-      return res.status(201).json({ user, info });
-    });
   });
 
   // DELETE
@@ -46,19 +47,19 @@ module.exports = (app) => {
       return res.status(400).send({ errors: ['invalid ID'] });
     }
 
-    getUsersDao().deleteUser(req.params.id, (err) => {
-      if (err) {
-        logger.error(err);
-        return res.status(500).send(err);
-      }
+    getUsersDao().deleteUser(req.params.id)
+      .then(() => {
+        logger.info('[USER DELETED]', {
+          id: req.params.id.toString(),
+          date: new Date().toDateString(),
+        });
 
-      logger.info('[USER DELETED]', {
-        id: req.params.id.toString(),
-        date: new Date().toDateString(),
+        return res.status(204).send();
+      })
+      .catch((err) => {
+        logger.error(err.toString());
+        return res.status(500).json(err.toString());
       });
-
-      return res.status(204).send();
-    });
   });
 
   // GET
@@ -69,17 +70,15 @@ module.exports = (app) => {
       password: req.body.password,
     };
 
-    getUsersDao().getUser(user, (err, result) => {
-      if (err) {
-        logger.error(err);
-        return res.status(500).json(err);
-      }
+    getUsersDao().getUser(user)
+      .then((result) => {
+        if (!result.length) return res.status(204).send();
 
-      if (!result.length) {
-        return res.status(204).send();
-      }
-
-      return res.status(200).json(result[0]);
-    });
+        return res.status(200).json(result[0]);
+      })
+      .catch((err) => {
+        logger.error(err.toString());
+        return res.status(500).json(err.toString());
+      });
   });
 };

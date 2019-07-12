@@ -88,3 +88,14 @@
 {"message":"TypeError: res.satus is not a function","level":"error"}
 {"id":"154","date":"Fri Jul 12 2019","level":"info","message":"[QUESTION CREATED]"}
 {"id":"155","date":"Fri Jul 12 2019","level":"info","message":"[QUESTION CREATED]"}
+{"id":"8","date":"Fri Jul 12 2019","username":"Specko","level":"info","message":"[USER CREATED]"}
+{"id":"9","date":"Fri Jul 12 2019","username":"Specko","level":"info","message":"[USER CREATED]"}
+{"id":"10","date":"Fri Jul 12 2019","username":"Specko","level":"info","message":"[USER CREATED]"}
+{"id":"11","date":"Fri Jul 12 2019","username":"Specko","level":"info","message":"[USER CREATED]"}
+{"id":"12","date":"Fri Jul 12 2019","username":"Specko","level":"info","message":"[USER CREATED]"}
+{"id":"13","date":"Fri Jul 12 2019","username":"Specko","level":"info","message":"[USER CREATED]"}
+{"id":"14","date":"Fri Jul 12 2019","username":"Specko","level":"info","message":"[USER CREATED]"}
+{"id":"15","date":"Fri Jul 12 2019","username":"Specko","level":"info","message":"[USER CREATED]"}
+{"id":"15","date":"Fri Jul 12 2019","level":"info","message":"[USER DELETED]"}
+{"id":"15","date":"Fri Jul 12 2019","level":"info","message":"[USER DELETED]"}
+{"id":"15","date":"Fri Jul 12 2019","level":"info","message":"[USER DELETED]"}
