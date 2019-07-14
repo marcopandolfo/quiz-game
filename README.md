@@ -17,7 +17,7 @@ Nós ainda estamos bem no começo do projeto, mas já está bem adiantado. Quand
 # TODO List 🚀
 
 - [ ] Salvar a senha em Hash no DB
-- [ ] Exibir os pontos e a rodada na interface principal do game
+- [x] Exibir os pontos e a rodada na interface principal do game
 - [ ] Fazer a parte de login do usuário
 - [x] Criando as tabelas MySql automaticamente ao iniciar o projeto
 - [x] Endpoint para verificar se um usuario existe
@@ -51,7 +51,7 @@ Nós ainda estamos bem no começo do projeto, mas já está bem adiantado. Quand
 
 ### INTERFACE PRINCIPAL DO GAME :sunglasses:
 
-![Game](https://user-images.githubusercontent.com/44484286/60781364-75d9b600-a118-11e9-9700-be87209c405b.PNG)
+![Game](https://user-images.githubusercontent.com/44484286/61190371-ad44e700-a671-11e9-8f9f-62f312af9eb0.PNG)
 
 ### Acessem a He4rtDevs: :exclamation: :purple_heart:
 
