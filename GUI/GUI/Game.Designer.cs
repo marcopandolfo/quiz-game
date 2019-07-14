@@ -37,6 +37,8 @@
             this.bttn3 = new System.Windows.Forms.Button();
             this.bttn1 = new System.Windows.Forms.Button();
             this.mainLabel = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -86,7 +88,7 @@
             this.bttn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttn2.ForeColor = System.Drawing.Color.White;
-            this.bttn2.Location = new System.Drawing.Point(486, 317);
+            this.bttn2.Location = new System.Drawing.Point(486, 376);
             this.bttn2.Name = "bttn2";
             this.bttn2.Size = new System.Drawing.Size(394, 65);
             this.bttn2.TabIndex = 10;
@@ -100,7 +102,7 @@
             this.bttn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttn4.ForeColor = System.Drawing.Color.White;
-            this.bttn4.Location = new System.Drawing.Point(486, 449);
+            this.bttn4.Location = new System.Drawing.Point(486, 507);
             this.bttn4.Name = "bttn4";
             this.bttn4.Size = new System.Drawing.Size(394, 65);
             this.bttn4.TabIndex = 11;
@@ -114,7 +116,7 @@
             this.bttn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttn3.ForeColor = System.Drawing.Color.White;
-            this.bttn3.Location = new System.Drawing.Point(78, 449);
+            this.bttn3.Location = new System.Drawing.Point(78, 507);
             this.bttn3.Name = "bttn3";
             this.bttn3.Size = new System.Drawing.Size(394, 65);
             this.bttn3.TabIndex = 12;
@@ -128,7 +130,7 @@
             this.bttn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttn1.ForeColor = System.Drawing.Color.White;
-            this.bttn1.Location = new System.Drawing.Point(78, 317);
+            this.bttn1.Location = new System.Drawing.Point(78, 376);
             this.bttn1.Name = "bttn1";
             this.bttn1.Size = new System.Drawing.Size(394, 65);
             this.bttn1.TabIndex = 13;
@@ -142,13 +144,41 @@
             this.mainLabel.BackColor = System.Drawing.Color.Transparent;
             this.mainLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mainLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(62)))), ((int)(((byte)(209)))));
-            this.mainLabel.Location = new System.Drawing.Point(180, 140);
+            this.mainLabel.Location = new System.Drawing.Point(204, 211);
             this.mainLabel.Name = "mainLabel";
             this.mainLabel.Size = new System.Drawing.Size(570, 99);
             this.mainLabel.TabIndex = 14;
             this.mainLabel.Text = "Aqui fica aquele texto da pergunta marota, \r\nque é muito massa, tipo essa. \r\nVocê" +
     " prefere morrer ou sentar na cabess ?";
             this.mainLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.AllowDrop = true;
+            this.label3.AutoEllipsis = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(62)))), ((int)(((byte)(209)))));
+            this.label3.Location = new System.Drawing.Point(72, 76);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(181, 74);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "Rodada:  0";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.AllowDrop = true;
+            this.label2.AutoEllipsis = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(62)))), ((int)(((byte)(209)))));
+            this.label2.Location = new System.Drawing.Point(674, 76);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(181, 74);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "Pontuação:  0";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Game
             // 
@@ -157,6 +187,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(928, 687);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.mainLabel);
             this.Controls.Add(this.bttn1);
             this.Controls.Add(this.bttn3);
@@ -185,5 +217,7 @@
         private System.Windows.Forms.Button bttn3;
         private System.Windows.Forms.Button bttn1;
         private System.Windows.Forms.Label mainLabel;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }
