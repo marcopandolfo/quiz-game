@@ -17,6 +17,7 @@ Nós ainda estamos bem no começo do projeto, mas já está bem adiantado. Quand
 # TODO List 🚀
 
 - [ ] Salvar a senha em Hash no DB
+- [ ] Verificar se o usuario clicou na alternativa correta (GUI)
 - [x] Exibir os pontos e a rodada na interface principal do game
 - [x] Fazer a parte de login do usuário (API)
 - [x] Criando as tabelas MySql automaticamente ao iniciar o projeto
@@ -24,13 +25,12 @@ Nós ainda estamos bem no começo do projeto, mas já está bem adiantado. Quand
 - [x] Migrar o DAO para promises
 - [x] Fazer o sistema de Logs
 - [x] Fazer o sistema de Logs de erros
-- [ ] Fazer a parte de login do usuário (GUI)
+- [x] Fazer a parte de login do usuário (GUI)
 - [x] Fazer uma tela para escolher a categoria das questões
 - [x] Overload no método de get questions para retornar questões de uma categoria
 - [x] Opção de pegar questões de uma categoria especifica na GUI
 - [x] Integrar o logger com o Morgan
 - [x] Integrar o registro de questões com a API
-- [ ] Verificar se o usuario clicou na alternativa correta (GUI)
 
 ## Aqui vou deixar algumas imagens de como ta ficando a interface :running:
 
