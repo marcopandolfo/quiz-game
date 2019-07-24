@@ -22,9 +22,11 @@ namespace GUI
         private void bttnCategoryAll_Click(object sender, EventArgs e)
         {
             Question question = QuestionService.GetRandomQuestion();
+
+            this.Hide();
             Game game = new Game(question);
+            game.Closed += (s, args) => this.Close();
             game.Show();
-            this.Visible = this.Enabled = false;
         }
 
         // História

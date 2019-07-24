@@ -1,3 +1,74 @@
 {"message":"::1 - - [24/Jul/2019:20:37:09 +0000] \"GET /users HTTP/1.1\" 200 75\n","level":"info"}
 {"message":"::1 - - [24/Jul/2019:20:37:10 +0000] \"GET /users HTTP/1.1\" 200 75\n","level":"info"}
 {"message":"::1 - - [24/Jul/2019:20:37:11 +0000] \"GET /users HTTP/1.1\" 200 75\n","level":"info"}
+{"message":"::1 - - [24/Jul/2019:20:46:50 +0000] \"GET /questions/:category HTTP/1.1\" 400 31\n","level":"info"}
+{"id":"16","date":"Wed Jul 24 2019","username":"rodolfin777","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:20:47:57 +0000] \"POST /users HTTP/1.1\" 201 132\n","level":"info"}
+{"id":"17","date":"Wed Jul 24 2019","username":"rodolfin777","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:20:48:02 +0000] \"POST /users HTTP/1.1\" 201 132\n","level":"info"}
+{"id":"18","date":"Wed Jul 24 2019","username":"rodolfin777","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:20:48:02 +0000] \"POST /users HTTP/1.1\" 201 132\n","level":"info"}
+{"id":"19","date":"Wed Jul 24 2019","username":"rodolfin777","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:20:48:03 +0000] \"POST /users HTTP/1.1\" 201 132\n","level":"info"}
+{"id":"20","date":"Wed Jul 24 2019","username":"rodolfin777","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:20:48:03 +0000] \"POST /users HTTP/1.1\" 201 132\n","level":"info"}
+{"id":"21","date":"Wed Jul 24 2019","username":"rodolfin777","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:20:48:03 +0000] \"POST /users HTTP/1.1\" 201 132\n","level":"info"}
+{"id":"22","date":"Wed Jul 24 2019","username":"rodolfin777","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:20:48:12 +0000] \"POST /users HTTP/1.1\" 201 132\n","level":"info"}
+{"id":"23","date":"Wed Jul 24 2019","username":"rodolfin777","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:20:48:12 +0000] \"POST /users HTTP/1.1\" 201 132\n","level":"info"}
+{"id":"24","date":"Wed Jul 24 2019","username":"rodolfin777","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:20:48:17 +0000] \"POST /users HTTP/1.1\" 201 132\n","level":"info"}
+{"id":"25","date":"Wed Jul 24 2019","username":"rodolfin777","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:20:48:17 +0000] \"POST /users HTTP/1.1\" 201 132\n","level":"info"}
+{"id":"26","date":"Wed Jul 24 2019","username":"rodolfin777","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:20:48:17 +0000] \"POST /users HTTP/1.1\" 201 132\n","level":"info"}
+{"id":"27","date":"Wed Jul 24 2019","username":"rodolfin777","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:20:48:17 +0000] \"POST /users HTTP/1.1\" 201 132\n","level":"info"}
+{"id":"28","date":"Wed Jul 24 2019","username":"rodolfin777","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:20:48:17 +0000] \"POST /users HTTP/1.1\" 201 132\n","level":"info"}
+{"id":"29","date":"Wed Jul 24 2019","username":"rodolfin777","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:20:48:25 +0000] \"POST /users HTTP/1.1\" 201 132\n","level":"info"}
+{"id":"30","date":"Wed Jul 24 2019","username":"rodolfin777","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:20:48:25 +0000] \"POST /users HTTP/1.1\" 201 132\n","level":"info"}
+{"id":"31","date":"Wed Jul 24 2019","username":"rodolfin777","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:20:48:25 +0000] \"POST /users HTTP/1.1\" 201 132\n","level":"info"}
+{"id":"32","date":"Wed Jul 24 2019","username":"usuariodaora","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:20:54:50 +0000] \"POST /users HTTP/1.1\" 201 137\n","level":"info"}
+{"id":"33","date":"Wed Jul 24 2019","username":"usuariodaora","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:20:55:15 +0000] \"POST /users HTTP/1.1\" 201 137\n","level":"info"}
+{"message":"::1 - - [24/Jul/2019:21:01:54 +0000] \"POST /users HTTP/1.1\" 400 93\n","level":"info"}
+{"id":"34","date":"Wed Jul 24 2019","username":"dalea","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:21:04:03 +0000] \"POST /users HTTP/1.1\" 201 116\n","level":"info"}
+{"id":"35","date":"Wed Jul 24 2019","username":"dalea","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:21:04:15 +0000] \"POST /users HTTP/1.1\" 201 116\n","level":"info"}
+{"id":"36","date":"Wed Jul 24 2019","username":"daleadalea","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:21:05:27 +0000] \"POST /users HTTP/1.1\" 201 121\n","level":"info"}
+{"id":"37","date":"Wed Jul 24 2019","username":"daleadalea","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:21:05:38 +0000] \"POST /users HTTP/1.1\" 201 121\n","level":"info"}
+{"id":"38","date":"Wed Jul 24 2019","username":"daleadalea","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:21:06:10 +0000] \"POST /users HTTP/1.1\" 201 121\n","level":"info"}
+{"id":"39","date":"Wed Jul 24 2019","username":"dalea","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:21:07:44 +0000] \"POST /users HTTP/1.1\" 201 116\n","level":"info"}
+{"id":"40","date":"Wed Jul 24 2019","username":"daleadalea","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:21:08:02 +0000] \"POST /users HTTP/1.1\" 201 121\n","level":"info"}
+{"id":"41","date":"Wed Jul 24 2019","username":"dalea","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:21:08:16 +0000] \"POST /users HTTP/1.1\" 201 116\n","level":"info"}
+{"id":"42","date":"Wed Jul 24 2019","username":"dalea","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:21:09:03 +0000] \"POST /users HTTP/1.1\" 201 116\n","level":"info"}
+{"id":"43","date":"Wed Jul 24 2019","username":"dalea","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:21:09:33 +0000] \"POST /users HTTP/1.1\" 201 116\n","level":"info"}
+{"id":"44","date":"Wed Jul 24 2019","username":"this.Hide();","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:21:13:09 +0000] \"POST /users HTTP/1.1\" 201 137\n","level":"info"}
+{"id":"45","date":"Wed Jul 24 2019","username":"this.Hide();","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:21:13:38 +0000] \"POST /users HTTP/1.1\" 201 137\n","level":"info"}
+{"id":"46","date":"Wed Jul 24 2019","username":"aaaaaa","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:21:14:52 +0000] \"POST /users HTTP/1.1\" 201 129\n","level":"info"}
+{"id":"47","date":"Wed Jul 24 2019","username":"aaaaaa@gmail.com","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:21:16:46 +0000] \"POST /users HTTP/1.1\" 201 139\n","level":"info"}
+{"id":"48","date":"Wed Jul 24 2019","username":"aaaaaa@gmail.com","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [24/Jul/2019:21:16:59 +0000] \"POST /users HTTP/1.1\" 201 139\n","level":"info"}
+{"message":"::1 - - [24/Jul/2019:21:18:52 +0000] \"GET /questions/:category HTTP/1.1\" 400 31\n","level":"info"}
+{"message":"TypeError: res.satus is not a function","level":"error"}
+{"message":"::1 - - [24/Jul/2019:21:18:58 +0000] \"GET /questions HTTP/1.1\" 500 40\n","level":"info"}
