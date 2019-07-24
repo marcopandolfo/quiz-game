@@ -12,7 +12,7 @@ module.exports = (app) => {
   // GET
   app.get('/questions', (req, res) => {
     getQuestionsDao().getRandom()
-      .then(result => res.satus(200).json(result[0]))
+      .then(result => res.status(200).json(result[0]).send())
       .catch((err) => {
         logger.error(err.toString());
         return res.status(500).json(err.toString());

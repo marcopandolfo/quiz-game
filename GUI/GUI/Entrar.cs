@@ -41,8 +41,7 @@ namespace GUI
             if(user == null)
             {
                 InvalidLogin();
-            }
-
+                return;
         }
 
         private void InvalidLogin()
