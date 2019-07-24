@@ -35,7 +35,7 @@
             this.bttnLogin = new System.Windows.Forms.Button();
             this.bttnRegister = new System.Windows.Forms.Button();
             this.txtLogin = new System.Windows.Forms.TextBox();
-            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.bttnMinimize = new System.Windows.Forms.Button();
             this.bttnClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -44,11 +44,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Fira Code", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(62)))), ((int)(((byte)(209)))));
             this.label1.Location = new System.Drawing.Point(299, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(321, 35);
+            this.label1.Size = new System.Drawing.Size(338, 33);
             this.label1.TabIndex = 0;
             this.label1.Text = "ENTRE NA SUA CONTA";
             // 
@@ -76,9 +76,9 @@
             this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label3.Location = new System.Drawing.Point(132, 185);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(134, 33);
+            this.label3.Size = new System.Drawing.Size(137, 33);
             this.label3.TabIndex = 2;
-            this.label3.Text = "     Login:";
+            this.label3.Text = "     Email:";
             // 
             // bttnLogin
             // 
@@ -93,6 +93,7 @@
             this.bttnLogin.TabIndex = 3;
             this.bttnLogin.Text = "Login";
             this.bttnLogin.UseVisualStyleBackColor = false;
+            this.bttnLogin.Click += new System.EventHandler(this.bttnLogin_Click);
             // 
             // bttnRegister
             // 
@@ -110,19 +111,23 @@
             // 
             // txtLogin
             // 
+            this.txtLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLogin.Location = new System.Drawing.Point(138, 247);
             this.txtLogin.Multiline = true;
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(679, 36);
             this.txtLogin.TabIndex = 5;
+            this.txtLogin.Text = "dalea@gmail.com";
             // 
-            // txtSenha
+            // txtPassword
             // 
-            this.txtSenha.Location = new System.Drawing.Point(138, 400);
-            this.txtSenha.Multiline = true;
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(679, 36);
-            this.txtSenha.TabIndex = 6;
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(138, 400);
+            this.txtPassword.Multiline = true;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(679, 36);
+            this.txtPassword.TabIndex = 6;
+            this.txtPassword.Text = "dalea";
             // 
             // bttnMinimize
             // 
@@ -161,7 +166,7 @@
             this.ClientSize = new System.Drawing.Size(928, 687);
             this.Controls.Add(this.bttnClose);
             this.Controls.Add(this.bttnMinimize);
-            this.Controls.Add(this.txtSenha);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtLogin);
             this.Controls.Add(this.bttnRegister);
             this.Controls.Add(this.bttnLogin);
@@ -186,7 +191,7 @@
         private System.Windows.Forms.Button bttnLogin;
         private System.Windows.Forms.Button bttnRegister;
         private System.Windows.Forms.TextBox txtLogin;
-        private System.Windows.Forms.TextBox txtSenha;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button bttnMinimize;
         private System.Windows.Forms.Button bttnClose;
     }

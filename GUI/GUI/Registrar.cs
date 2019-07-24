@@ -36,10 +36,7 @@ namespace GUI
             string Password = txtPassword.Text;
             string ConfirmPassword = txtConfirmPassword.Text;
 
-            if (ValidateInputs(Username, Email, Password, ConfirmPassword))
-            {
-                return;
-            }
+            if (ValidateInputs(Username, Email, Password, ConfirmPassword)) return;
 
             UserService.SaveUser(new User(Username, Email, Password));
 

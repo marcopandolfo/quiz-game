@@ -1,4 +1,4 @@
-﻿using GUI.models;
+using GUI.models;
 using Newtonsoft.Json;
 using RestSharp;
 using System;
@@ -24,11 +24,13 @@ namespace GUI.services
         }
 
         // GET
-        static public User SearchUser(string login, string password)
+        static public User SearchUser(string email, string password)
         {
-            var client = new RestClient(@"http://localhost:3000/users");
-            var request = new RestRequest(Method.GET);
+            var client = new RestClient(@"http://localhost:3000/getUser");
+            var request = new RestRequest(Method.POST);
             request.AddHeader("Accept", "application/json");
+            string json = JsonConvert.SerializeObject(new { email, password});
+            request.AddJsonBody(json);
             IRestResponse response = client.Execute(request);
             var user = JsonConvert.DeserializeObject<User>(response.Content);
             return user;
