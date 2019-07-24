@@ -36,11 +36,13 @@ namespace GUI
             // Correct alternative
             if (button.Tag != null)
             {
+                button.BackColor = Color.Green;
                 MessageBoxService.ShowMessage("Parabéns!", "Parabéns!\nAlternativa CORRETA!");
                 return;
             }
 
             // Incorrect
+            button.BackColor = Color.Red;
             MessageBoxService.ShowMessage("Você Perdeu!", "Fim de jogo!\nAlternativa INCORRETA!");
 
         }
