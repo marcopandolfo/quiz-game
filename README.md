@@ -17,7 +17,9 @@ Nós ainda estamos bem no começo do projeto, mas já está bem adiantado. Quand
 # TODO List 🚀
 
 - [ ] Salvar a senha em Hash no DB
-- [ ] Verificar se o usuario clicou na alternativa correta (GUI)
+- [ ] Implementar fim de jogo (GUI)
+- [ ] Avançar para a proxima fase (GUI)
+- [x] Verificar se o usuario clicou na alternativa correta (GUI)
 - [x] Exibir os pontos e a rodada na interface principal do game
 - [x] Fazer a parte de login do usuário (API)
 - [x] Criando as tabelas MySql automaticamente ao iniciar o projeto
