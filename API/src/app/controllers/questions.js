@@ -1,5 +1,4 @@
 /* eslint-disable consistent-return */
-const morgan = require('morgan');
 const Question = require('../models/question');
 const logger = require('../../config/logger');
 const categories = require('../models/categories');
@@ -9,8 +8,6 @@ module.exports = (app) => {
     const connection = app.infra.connectionFactory();
     return new app.infra.QuestionsDAO(connection);
   };
-
-  app.use(morgan('combined'));
 
   // GET
   app.get('/questions', (req, res) => {
