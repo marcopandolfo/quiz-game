@@ -21,6 +21,7 @@ namespace GUI
 
         private void Construct(Question question)
         {
+            // TODO: Tratar questão nula
             mainLabel.Text = question.question;
             string[] Incorrect_Answers = question.incorrect_answers.Split('/');
             MountAlternatives(question, Incorrect_Answers);

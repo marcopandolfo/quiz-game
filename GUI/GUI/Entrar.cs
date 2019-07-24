@@ -42,6 +42,13 @@ namespace GUI
             {
                 InvalidLogin();
                 return;
+            }
+
+            this.Hide();
+            EscolherCategoria aux = new EscolherCategoria();
+            aux.Closed += (s, args) => this.Close();
+            aux.Show();
+
         }
 
         private void InvalidLogin()
