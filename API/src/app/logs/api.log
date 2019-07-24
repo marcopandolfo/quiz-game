@@ -72,3 +72,8 @@
 {"message":"::1 - - [24/Jul/2019:21:18:52 +0000] \"GET /questions/:category HTTP/1.1\" 400 31\n","level":"info"}
 {"message":"TypeError: res.satus is not a function","level":"error"}
 {"message":"::1 - - [24/Jul/2019:21:18:58 +0000] \"GET /questions HTTP/1.1\" 500 40\n","level":"info"}
+{"message":"::1 - - [24/Jul/2019:22:10:31 +0000] \"GET /users HTTP/1.1\" 204 -\n","level":"info"}
+{"message":"::1 - - [24/Jul/2019:22:11:00 +0000] \"GET /users HTTP/1.1\" 204 -\n","level":"info"}
+{"message":"::1 - - [24/Jul/2019:22:12:33 +0000] \"GET /users HTTP/1.1\" 204 -\n","level":"info"}
+{"message":"::1 - - [24/Jul/2019:22:13:38 +0000] \"GET /users HTTP/1.1\" 204 -\n","level":"info"}
+{"message":"::1 - - [24/Jul/2019:22:18:05 +0000] \"POST /getUser HTTP/1.1\" 200 73\n","level":"info"}

@@ -59,9 +59,9 @@ module.exports = (app) => {
       });
   });
 
-  // GET
+  // search user
   // idk if 204 code is appropriate for this case
-  app.get('/users', (req, res) => {
+  app.post('/getUser', (req, res) => {
     const user = {
       email: req.body.email,
       password: req.body.password,
