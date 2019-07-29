@@ -18,6 +18,7 @@ Nós ainda estamos bem no começo do projeto, mas já está bem adiantado. Quand
 
 - [ ] Salvar a senha em Hash no DB
 - [ ] Implementar fim de jogo (GUI)
+- [ ] "Reiniciar" o jogo (GUI)
 - [ ] Avançar para a proxima fase (GUI)
 - [x] Verificar se o usuario clicou na alternativa correta (GUI)
 - [x] Exibir os pontos e a rodada na interface principal do game
