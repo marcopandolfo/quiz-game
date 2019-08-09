@@ -36,26 +36,17 @@ namespace GUI
             string Password = txtPassword.Text;
             string ConfirmPassword = txtConfirmPassword.Text;
 
-            if (ValidateInputs(Username, Email, Password, ConfirmPassword))
-            {
-                MessageBoxService.ShowMessage("Erro ao registrar", "Você deve preencher todos os campos");
-                return;
-            }
-
-            if (ValidatePassword(Password, ConfirmPassword))
-            {
-                MessageBoxService.ShowMessage("Erro ao registrar", "Suas senhas não são iguais");
-                return;
-            }
-
-            if (ValidateEmail(Email))
-            {
-                MessageBoxService.ShowMessage("Erro ao registrar", "Formato de email invalido");
-                return;
-            }
-
+            if (ValidateInputs(Username, Email, Password, ConfirmPassword)) return;
 
             UserService.SaveUser(new User(Username, Email, Password));
+
+            MessageBoxService.ShowMessage("Parabéns", "Cadastro efetuado com sucesso!\n\nClique em OK para entrar");
+
+            this.Hide();
+            Entrar entrar = new Entrar();
+            entrar.Closed += (s, args) => this.Close();
+            entrar.Show();
+
 
         }
 
@@ -69,10 +60,28 @@ namespace GUI
             return (password != confirmPassword);
         }
 
-        // Verifica se algum input é null ou empty e retorna true se for
+        // Valida os inputs
         private bool ValidateInputs(string nome, string email, string password, string confirmPassword)
         {
-            return String.IsNullOrEmpty(nome) || String.IsNullOrEmpty(email) || String.IsNullOrEmpty(password) || String.IsNullOrEmpty(confirmPassword);
+            if (String.IsNullOrEmpty(nome) || String.IsNullOrEmpty(email) || String.IsNullOrEmpty(password) || String.IsNullOrEmpty(confirmPassword))
+            {
+                MessageBoxService.ShowMessage("Erro ao registrar", "Você deve preencher todos os campos");
+                return true;
+            }
+
+            if (ValidateEmail(email))
+            {
+                MessageBoxService.ShowMessage("Erro ao registrar", "Formato de email invalido");
+                return true;
+            }
+
+            if (ValidatePassword(password, confirmPassword))
+            {
+                MessageBoxService.ShowMessage("Erro ao registrar", "Suas senhas não são iguais");
+                return true;
+            }
+
+            return false;
         }
     }
 }

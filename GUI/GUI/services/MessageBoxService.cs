@@ -9,6 +9,11 @@ namespace GUI.services
 {
     static class MessageBoxService
     {
+        /// <summary>
+        /// Exibe uma MessageBox na tela atual do usuario
+        /// </summary>
+        /// <param name="caption">Titulo</param>
+        /// <param name="message">Mensagem</param>
         public static void ShowMessage(string caption, string message)
         {
             MessageBoxButtons buttons = MessageBoxButtons.OK;

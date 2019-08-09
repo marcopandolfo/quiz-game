@@ -1,5 +1,4 @@
 /* eslint-disable consistent-return */
-const morgan = require('morgan');
 const User = require('../models/user');
 const logger = require('../../config/logger');
 
@@ -8,8 +7,6 @@ module.exports = (app) => {
     const connection = app.infra.connectionFactory();
     return new app.infra.UserDAO(connection);
   };
-
-  app.use(morgan('combined'));
 
   // POST
   app.post('/users', (req, res) => {
@@ -62,9 +59,9 @@ module.exports = (app) => {
       });
   });
 
-  // GET
+  // search user
   // idk if 204 code is appropriate for this case
-  app.get('/users', (req, res) => {
+  app.post('/getUser', (req, res) => {
     const user = {
       email: req.body.email,
       password: req.body.password,
