@@ -16,7 +16,7 @@ Nós ainda estamos bem no começo do projeto, mas já está bem adiantado. Quand
 
 # TODO List 🚀
 
-- [ ] Salvar a senha em Hash no DB
+- [x] Salvar a senha em Hash no DB
 - [ ] Implementar fim de jogo (GUI)
 - [ ] "Reiniciar" o jogo (GUI)
 - [ ] Avançar para a proxima fase (GUI)

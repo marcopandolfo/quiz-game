@@ -118,7 +118,6 @@
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(679, 36);
             this.txtLogin.TabIndex = 5;
-            this.txtLogin.Text = "dalea@gmail.com";
             // 
             // txtPassword
             // 
@@ -128,7 +127,6 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(679, 36);
             this.txtPassword.TabIndex = 6;
-            this.txtPassword.Text = "dalea";
             // 
             // bttnMinimize
             // 

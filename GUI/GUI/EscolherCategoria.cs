@@ -25,7 +25,7 @@ namespace GUI
             Question question = QuestionService.GetRandomQuestion();
             if (question == null)
             {
-                MessageBoxService.ShowMessage("Ocorreu um erro!", "Não existem questões no banco de dados\nClique em OK para adicionar");
+                MessageBoxService.ShowMessage("Ocorreu um erro!", "Não existem questões no banco de dados dessa categoria\nClique em OK para adicionar");
                 this.Hide();
                 Questions questions = new Questions();
                 questions.Closed += (s, args) => this.Close();
