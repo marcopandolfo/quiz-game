@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using RestSharp;
 
-namespace GUI.util
+namespace GUI.services
 {
     static class QuestionService
     {

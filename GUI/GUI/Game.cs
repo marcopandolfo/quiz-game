@@ -13,14 +13,26 @@ namespace GUI
 {
     public partial class Game : Form
     {
-        public Game(Question question)
+        public string Category { get; set; }
+        public Game(Question question, string category = "", int round = 2)
         {
             InitializeComponent();
             Construct(question);
+            RenderRound(round);
+            this.Category = category;
         }
 
         private void Construct(Question question)
         {
+            if (question.question == null)
+            {
+                MessageBoxService.ShowMessage("Ocorreu um erro!", "Não existem questões no banco de dados dessa categoria\nClique em OK para adicionar");
+                this.Hide();
+                Questions questions = new Questions();
+                questions.Closed += (s, args) => this.Close();
+                questions.Show();
+                return;
+            }
             mainLabel.Text = question.question;
             string[] Incorrect_Answers = question.incorrect_answers.Split('/');
             MountAlternatives(question, Incorrect_Answers);
@@ -37,15 +49,25 @@ namespace GUI
             {
                 button.BackColor = Color.Green;
                 MessageBoxService.ShowMessage("Parabéns!", "Parabéns!\nAlternativa CORRETA!");
+                NextLevel(int.Parse(lblRound.Text));
                 return;
             }
 
             // Incorrect
             button.BackColor = Color.Red;
-            MessageBoxService.ShowMessage("Você Perdeu!", "Fim de jogo!\nAlternativa INCORRETA!");
+            MessageBoxService.ShowMessage("Você Perdeu!", "Fim de jogo!\nAlternativa INCORRETA!\nClique em OK para jogar novamente!");
+            GameOver();
 
         }
 
+        private void NextLevel(int round)
+        {
+            Question q = QuestionService.GetRandomQuestion();
+            this.Hide();
+            Game game = new Game(q, this.Category, round);
+            game.Closed += (s, args) => this.Close();
+            game.Show();
+        }
 
         private void MountAlternatives(Question question, string[] incorrect_answers)
         {
@@ -85,6 +107,14 @@ namespace GUI
             }
         }
 
+        private void GameOver()
+        {
+            this.Hide();
+            EscolherCategoria aux = new EscolherCategoria();
+            aux.Closed += (s, args) => this.Close();
+            aux.Show();
+        }
+
 
         private void BttnMinimize_Click(object sender, EventArgs e)
         {
@@ -102,6 +132,11 @@ namespace GUI
             bttn2.Click += ButtonsHandler;
             bttn3.Click += ButtonsHandler;
             bttn4.Click += ButtonsHandler;
+        }
+
+        private void RenderRound(int round)
+        {
+            lblRound.Text = round.ToString();
         }
     }
 }

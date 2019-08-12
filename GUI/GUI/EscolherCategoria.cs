@@ -1,5 +1,5 @@
 ﻿using GUI.services;
-using GUI.util;
+using GUI.services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,15 +23,8 @@ namespace GUI
         private void bttnCategoryAll_Click(object sender, EventArgs e)
         {
             Question question = QuestionService.GetRandomQuestion();
-            if (question == null)
-            {
-                MessageBoxService.ShowMessage("Ocorreu um erro!", "Não existem questões no banco de dados dessa categoria\nClique em OK para adicionar");
-                this.Hide();
-                Questions questions = new Questions();
-                questions.Closed += (s, args) => this.Close();
-                questions.Show();
-                return;
-            }
+            if (!VerifyQuestion(question)) return;
+
             this.Hide();
             Game game = new Game(question);
             game.Closed += (s, args) => this.Close();
@@ -42,7 +35,8 @@ namespace GUI
         private void bttnCategoryA_Click(object sender, EventArgs e)
         {
             Question question = QuestionService.GetRandomQuestion("Historia");
-            Game game = new Game(question);
+            if (!VerifyQuestion(question)) return;
+            Game game = new Game(question, "Historia");
             game.Show();
             this.Visible = this.Enabled = false;
         }
@@ -51,7 +45,8 @@ namespace GUI
         private void BttnCategoryC_Click(object sender, EventArgs e)
         {
             Question question = QuestionService.GetRandomQuestion("Geografia");
-            Game game = new Game(question);
+            if (!VerifyQuestion(question)) return;
+            Game game = new Game(question, "Geografia");
             game.Show();
             this.Visible = this.Enabled = false;
         }
@@ -60,7 +55,8 @@ namespace GUI
         private void BttnCategoryD_Click(object sender, EventArgs e)
         {
             Question question = QuestionService.GetRandomQuestion("Ciencia e Natureza");
-            Game game = new Game(question);
+            if (!VerifyQuestion(question)) return;
+            Game game = new Game(question, "Ciencia e Natureza");
             game.Show();
             this.Visible = this.Enabled = false;
         }
@@ -69,7 +65,8 @@ namespace GUI
         private void BttnCategoryE_Click(object sender, EventArgs e)
         {
             Question question = QuestionService.GetRandomQuestion("Entreterimento");
-            Game game = new Game(question);
+            if (!VerifyQuestion(question)) return;
+            Game game = new Game(question, "Entreterimento");
             game.Show();
             this.Visible = this.Enabled = false;
         }
@@ -78,7 +75,8 @@ namespace GUI
         private void BttnCategoryB_Click(object sender, EventArgs e)
         {
             Question question = QuestionService.GetRandomQuestion("Arte e Literatura");
-            Game game = new Game(question);
+            if (!VerifyQuestion(question)) return;
+            Game game = new Game(question, "Arte e Literatura");
             game.Show();
             this.Visible = this.Enabled = false;
         }
@@ -91,6 +89,21 @@ namespace GUI
         private void BttnMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private bool VerifyQuestion(Question question)
+        {
+            if (question.question == null)
+            {
+                MessageBoxService.ShowMessage("Ocorreu um erro!", "Não existem questões no banco de dados dessa categoria\nClique em OK para adicionar");
+                this.Hide();
+                Questions questions = new Questions();
+                questions.Closed += (s, args) => this.Close();
+                questions.Show();
+                return false;
+            }
+
+            return true;
         }
     }
 }
