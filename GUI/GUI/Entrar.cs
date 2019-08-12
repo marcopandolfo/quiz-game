@@ -79,5 +79,13 @@ namespace GUI
 
             return false;
         }
+
+        private void BttnRegister_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Registrar regisrar = new Registrar();
+            regisrar.Closed += (s, args) => this.Close();
+            regisrar.Show();
+        }
     }
 }
