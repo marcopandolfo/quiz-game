@@ -17,7 +17,7 @@ UserDAO.prototype.saveUser = function saveUser(user) {
 // Pegar algum user
 UserDAO.prototype.getUser = function getUser(user) {
   return new Promise((resolve, reject) => {
-    this._connection.query('SELECT * FROM users WHERE email=? AND password=?', [user.email, user.password],
+    this._connection.query('SELECT * FROM users WHERE email=? AND passwordHash=?', [user.email, user.passwordHash],
       (err, result) => {
         if (err) return reject(err);
 

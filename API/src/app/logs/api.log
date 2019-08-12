@@ -67,3 +67,21 @@
 {"message":"::1 - - [24/Jul/2019:23:33:26 +0000] \"GET /questions HTTP/1.1\" 200 287\n","level":"info"}
 {"message":"::1 - - [24/Jul/2019:23:33:42 +0000] \"POST /getUser HTTP/1.1\" 200 73\n","level":"info"}
 {"message":"::1 - - [24/Jul/2019:23:33:42 +0000] \"GET /questions HTTP/1.1\" 200 287\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:20:11:43 +0000] \"POST /users HTTP/1.1\" 400 13\n","level":"info"}
+{"message":"Error: ER_BAD_FIELD_ERROR: Unknown column 'password' in 'where clause'","level":"error"}
+{"message":"::1 - - [12/Aug/2019:20:11:53 +0000] \"POST /getUser HTTP/1.1\" 500 72\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:20:13:07 +0000] \"POST /users HTTP/1.1\" 400 13\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:20:13:42 +0000] \"POST /users HTTP/1.1\" 400 13\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:20:15:30 +0000] \"POST /users HTTP/1.1\" 400 13\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:20:16:15 +0000] \"POST /users HTTP/1.1\" 400 13\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:20:18:35 +0000] \"POST /users HTTP/1.1\" 400 13\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:20:20:17 +0000] \"POST /users HTTP/1.1\" 400 13\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:20:22:24 +0000] \"POST /users HTTP/1.1\" 400 13\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:20:23:35 +0000] \"POST /users HTTP/1.1\" 400 13\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:20:25:23 +0000] \"POST /users HTTP/1.1\" 400 13\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:20:28:54 +0000] \"POST /users HTTP/1.1\" 400 13\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:20:28:57 +0000] \"POST /users HTTP/1.1\" 400 13\n","level":"info"}
+{"id":"1","date":"Mon Aug 12 2019","username":"marco","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [12/Aug/2019:20:29:31 +0000] \"POST /users HTTP/1.1\" 201 119\n","level":"info"}
+{"id":"2","date":"Mon Aug 12 2019","username":"marco","level":"info","message":"[USER CREATED]"}
+{"message":"::1 - - [12/Aug/2019:20:30:18 +0000] \"POST /users HTTP/1.1\" 201 119\n","level":"info"}

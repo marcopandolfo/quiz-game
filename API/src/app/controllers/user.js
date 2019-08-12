@@ -10,11 +10,14 @@ module.exports = (app) => {
 
   // POST
   app.post('/users', (req, res) => {
+    console.log(req.body);
+
     // Validate
     const errors = User.validade(req.body);
+
     if (errors.length !== 0) return res.status(400).send({ errors });
 
-    const user = new User(req.body.username, req.body.email, req.body.password);
+    const user = new User(req.body.username, req.body.email, req.body.passwordHash);
 
     getUsersDao().saveUser(user)
       .then((result) => {
