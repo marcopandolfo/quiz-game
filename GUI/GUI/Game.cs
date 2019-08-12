@@ -14,7 +14,7 @@ namespace GUI
     public partial class Game : Form
     {
         public string Category { get; set; }
-        public Game(Question question, string category = "", int round = 2)
+        public Game(Question question, string category = "", int round = 0)
         {
             InitializeComponent();
             Construct(question);
@@ -55,7 +55,7 @@ namespace GUI
 
             // Incorrect
             button.BackColor = Color.Red;
-            MessageBoxService.ShowMessage("Você Perdeu!", "Fim de jogo!\nAlternativa INCORRETA!\nClique em OK para jogar novamente!");
+            MessageBoxService.ShowMessage("Você Perdeu!", $"Fim de jogo!\nAlternativa INCORRETA!\nClique em OK para jogar novamente!\nVocê fez {lblRound.Text} pontos!");
             GameOver();
 
         }
