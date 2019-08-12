@@ -1,10 +1,10 @@
-// const bcrypt = require('bcryptjs');
+const bcrypt = require('bcryptjs');
 
 class User {
-  constructor(username, email, passwordHash) {
+  constructor(username, email, password) {
     this.username = username;
     this.email = email;
-    this.passwordHash = passwordHash;
+    this.passwordHash = bcrypt.hashSync(password, 8);
   }
 
   static validade(body) {
@@ -12,18 +12,7 @@ class User {
 
     if (!body.username) errors.push('username can not be empty');
     if (!body.email) errors.push('email can not be empty');
-    if (!body.passwordHash) errors.push('password can not be empty');
-
-    // Precisa testar essa parte de hash
-
-    // if (body.passwordHash) {
-    //   User.passwordHash = await bcrypt.hash(User.password, 8);
-    // }
-
-    // // eslint-disable-next-line func-names
-    // User.prototype.checkPassword = function (password) {
-    //   return bcrypt.compare(password, this.passwordHash);
-    // };
+    if (!body.password) errors.push('password can not be empty');
 
     return errors;
   }

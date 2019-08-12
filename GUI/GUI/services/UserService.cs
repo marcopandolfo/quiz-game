@@ -29,7 +29,7 @@ namespace GUI.services
             var client = new RestClient(@"http://localhost:3000/getUser");
             var request = new RestRequest(Method.POST);
             request.AddHeader("Accept", "application/json");
-            string json = JsonConvert.SerializeObject(new { email, password});
+            string json = JsonConvert.SerializeObject(new { email, password });
             request.AddJsonBody(json);
             IRestResponse response = client.Execute(request);
             var user = JsonConvert.DeserializeObject<User>(response.Content);

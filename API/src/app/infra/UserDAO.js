@@ -14,14 +14,29 @@ UserDAO.prototype.saveUser = function saveUser(user) {
   });
 };
 
-// Pegar algum user
-UserDAO.prototype.getUser = function getUser(user) {
+
+// Get hash
+UserDAO.prototype.getHashFromDB = function getHashFromDB(email) {
   return new Promise((resolve, reject) => {
-    this._connection.query('SELECT * FROM users WHERE email=? AND passwordHash=?', [user.email, user.passwordHash],
+    this._connection.query('SELECT passwordHash FROM users WHERE email=?', [email],
       (err, result) => {
         if (err) return reject(err);
 
-        return resolve(result);
+        if (result[0]) return resolve(result[0].passwordHash);
+
+        return resolve('notfound');
+      });
+  });
+};
+
+// Pegar algum user
+UserDAO.prototype.getUser = function getUser(email) {
+  return new Promise((resolve, reject) => {
+    this._connection.query('SELECT * FROM users WHERE email=?', [email],
+      (err, result) => {
+        if (err) return reject(err);
+
+        return resolve(result[0]);
       });
   });
 };

@@ -1,4 +1,5 @@
 /* eslint-disable consistent-return */
+const bcrypt = require('bcryptjs');
 const User = require('../models/user');
 const logger = require('../../config/logger');
 
@@ -10,14 +11,12 @@ module.exports = (app) => {
 
   // POST
   app.post('/users', (req, res) => {
-    console.log(req.body);
-
     // Validate
     const errors = User.validade(req.body);
 
     if (errors.length !== 0) return res.status(400).send({ errors });
 
-    const user = new User(req.body.username, req.body.email, req.body.passwordHash);
+    const user = new User(req.body.username, req.body.email, req.body.password);
 
     getUsersDao().saveUser(user)
       .then((result) => {
@@ -63,22 +62,19 @@ module.exports = (app) => {
   });
 
   // search user
-  // idk if 204 code is appropriate for this case
-  app.post('/getUser', (req, res) => {
+  app.post('/getUser', async (req, res) => {
     const user = {
       email: req.body.email,
       password: req.body.password,
     };
 
-    getUsersDao().getUser(user)
-      .then((result) => {
-        if (!result.length) return res.status(204).send();
+    const hash = await getUsersDao().getHashFromDB(user.email);
 
-        return res.status(200).json(result[0]);
-      })
-      .catch((err) => {
-        logger.error(err.toString());
-        return res.status(500).json(err.toString());
-      });
+    if (bcrypt.compareSync(user.password, hash)) {
+      return res.status(200).send(
+        await getUsersDao().getUser(user.email),
+      );
+    }
+    return res.status(403).send();
   });
 };
