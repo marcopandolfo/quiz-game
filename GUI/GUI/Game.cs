@@ -136,6 +136,7 @@ namespace GUI
 
         private void RenderRound(int round)
         {
+            round++;
             lblRound.Text = round.ToString();
         }
     }
