@@ -23,7 +23,15 @@ namespace GUI
         private void bttnCategoryAll_Click(object sender, EventArgs e)
         {
             Question question = QuestionService.GetRandomQuestion();
-
+            if (question == null)
+            {
+                MessageBoxService.ShowMessage("Ocorreu um erro!", "Não existem questões no banco de dados\nClique em OK para adicionar");
+                this.Hide();
+                Questions questions = new Questions();
+                questions.Closed += (s, args) => this.Close();
+                questions.Show();
+                return;
+            }
             this.Hide();
             Game game = new Game(question);
             game.Closed += (s, args) => this.Close();
