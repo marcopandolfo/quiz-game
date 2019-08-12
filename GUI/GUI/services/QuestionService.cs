@@ -38,7 +38,7 @@ namespace GUI.services
         // GET
         static public Question GetRandomQuestion(string category)
         {
-            var client = new RestClient(@"http://localhost:3000/questions/:category");
+            var client = new RestClient(@"http://localhost:3000/questions/" + category);
             var request = new RestRequest(Method.GET);
             request.AddHeader("Accept", "application/json");
             IRestResponse response = client.Execute(request);

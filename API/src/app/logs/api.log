@@ -112,3 +112,93 @@
 {"message":"::1 - - [12/Aug/2019:23:22:36 +0000] \"GET /questions HTTP/1.1\" 200 277\n","level":"info"}
 {"message":"::1 - - [12/Aug/2019:23:22:41 +0000] \"GET /questions HTTP/1.1\" 200 277\n","level":"info"}
 {"message":"::1 - - [12/Aug/2019:23:22:43 +0000] \"GET /questions HTTP/1.1\" 200 277\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:26:39 +0000] \"POST /getUser HTTP/1.1\" 200 133\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:26:41 +0000] \"GET /questions/:category HTTP/1.1\" 400 31\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:26:51 +0000] \"POST /getUser HTTP/1.1\" 200 133\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:26:51 +0000] \"GET /questions HTTP/1.1\" 200 277\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:26:58 +0000] \"GET /questions HTTP/1.1\" 200 277\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:27:02 +0000] \"GET /questions HTTP/1.1\" 200 277\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:27:04 +0000] \"GET /questions HTTP/1.1\" 200 277\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:27:05 +0000] \"GET /questions HTTP/1.1\" 200 277\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:27:08 +0000] \"GET /questions HTTP/1.1\" 200 277\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:27:11 +0000] \"GET /questions HTTP/1.1\" 200 277\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:30:04 +0000] \"POST /getUser HTTP/1.1\" 200 133\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:30:06 +0000] \"GET /questions HTTP/1.1\" 200 277\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:30:08 +0000] \"GET /questions HTTP/1.1\" 200 277\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:30:11 +0000] \"GET /questions HTTP/1.1\" 200 277\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:33:07 +0000] \"POST /getUser HTTP/1.1\" 403 -\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:33:15 +0000] \"POST /getUser HTTP/1.1\" 200 133\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:33:18 +0000] \"GET /questions HTTP/1.1\" 200 277\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:33:20 +0000] \"GET /questions HTTP/1.1\" 200 277\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:33:45 +0000] \"GET /questions/:category HTTP/1.1\" 400 31\n","level":"info"}
+{"id":"3","date":"Mon Aug 12 2019","level":"info","message":"[QUESTION CREATED]"}
+{"message":"::1 - - [12/Aug/2019:23:36:24 +0000] \"POST /questions HTTP/1.1\" 201 188\n","level":"info"}
+{"id":"4","date":"Mon Aug 12 2019","level":"info","message":"[QUESTION CREATED]"}
+{"message":"::1 - - [12/Aug/2019:23:36:27 +0000] \"POST /questions HTTP/1.1\" 201 188\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:37:38 +0000] \"POST /getUser HTTP/1.1\" 403 -\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:37:48 +0000] \"POST /getUser HTTP/1.1\" 200 133\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:37:49 +0000] \"GET /questions/:category HTTP/1.1\" 400 31\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:38:21 +0000] \"POST /getUser HTTP/1.1\" 200 133\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:38:23 +0000] \"GET /questions/:category HTTP/1.1\" 400 31\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:45:31 +0000] \"POST /getUser HTTP/1.1\" 200 133\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:45:54 +0000] \"GET /questions/:category HTTP/1.1\" 400 31\n","level":"info"}
+{"id":"5","date":"Mon Aug 12 2019","level":"info","message":"[QUESTION CREATED]"}
+{"message":"::1 - - [12/Aug/2019:23:46:31 +0000] \"POST /questions HTTP/1.1\" 201 157\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:46:43 +0000] \"POST /getUser HTTP/1.1\" 200 133\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:46:44 +0000] \"GET /questions/:category HTTP/1.1\" 400 31\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:48:06 +0000] \"POST /getUser HTTP/1.1\" 200 133\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:48:07 +0000] \"GET /questions/:category HTTP/1.1\" 400 31\n","level":"info"}
+{"id":"6","date":"Mon Aug 12 2019","level":"info","message":"[QUESTION CREATED]"}
+{"message":"::1 - - [12/Aug/2019:23:48:17 +0000] \"POST /questions HTTP/1.1\" 201 153\n","level":"info"}
+{"id":"7","date":"Mon Aug 12 2019","level":"info","message":"[QUESTION CREATED]"}
+{"message":"::1 - - [12/Aug/2019:23:48:31 +0000] \"POST /questions HTTP/1.1\" 201 153\n","level":"info"}
+{"id":"8","date":"Mon Aug 12 2019","level":"info","message":"[QUESTION CREATED]"}
+{"message":"::1 - - [12/Aug/2019:23:48:42 +0000] \"POST /questions HTTP/1.1\" 201 153\n","level":"info"}
+{"id":"9","date":"Mon Aug 12 2019","level":"info","message":"[QUESTION CREATED]"}
+{"message":"::1 - - [12/Aug/2019:23:48:47 +0000] \"POST /questions HTTP/1.1\" 201 154\n","level":"info"}
+{"id":"10","date":"Mon Aug 12 2019","level":"info","message":"[QUESTION CREATED]"}
+{"message":"::1 - - [12/Aug/2019:23:48:52 +0000] \"POST /questions HTTP/1.1\" 201 164\n","level":"info"}
+{"id":"11","date":"Mon Aug 12 2019","level":"info","message":"[QUESTION CREATED]"}
+{"message":"::1 - - [12/Aug/2019:23:48:57 +0000] \"POST /questions HTTP/1.1\" 201 160\n","level":"info"}
+{"id":"12","date":"Mon Aug 12 2019","level":"info","message":"[QUESTION CREATED]"}
+{"message":"::1 - - [12/Aug/2019:23:49:03 +0000] \"POST /questions HTTP/1.1\" 201 163\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:49:50 +0000] \"POST /getUser HTTP/1.1\" 200 133\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:49:51 +0000] \"GET /questions/Historia HTTP/1.1\" 200 141\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:49:57 +0000] \"GET /questions HTTP/1.1\" 200 106\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:50:00 +0000] \"GET /questions HTTP/1.1\" 200 117\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:50:03 +0000] \"GET /questions HTTP/1.1\" 200 113\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:50:04 +0000] \"GET /questions HTTP/1.1\" 200 141\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:50:09 +0000] \"GET /questions/Historia HTTP/1.1\" 200 141\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:50:19 +0000] \"GET /questions/Ciencia%20e%20Natureza HTTP/1.1\" 200 117\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:50:22 +0000] \"GET /questions/Entreterimento HTTP/1.1\" 200 113\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:50:27 +0000] \"GET /questions HTTP/1.1\" 200 106\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:50:29 +0000] \"GET /questions HTTP/1.1\" 200 116\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:50:31 +0000] \"GET /questions HTTP/1.1\" 200 277\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:50:33 +0000] \"GET /questions HTTP/1.1\" 200 141\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:50:35 +0000] \"GET /questions HTTP/1.1\" 200 116\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:50:37 +0000] \"GET /questions HTTP/1.1\" 200 107\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:50:39 +0000] \"GET /questions HTTP/1.1\" 200 113\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:50:42 +0000] \"GET /questions HTTP/1.1\" 200 113\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:50:48 +0000] \"GET /questions/Arte%20e%20Literatura HTTP/1.1\" 200 116\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:50:49 +0000] \"GET /questions HTTP/1.1\" 200 277\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:50:53 +0000] \"GET /questions HTTP/1.1\" 200 277\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:51:00 +0000] \"GET /questions/Ciencia%20e%20Natureza HTTP/1.1\" 200 117\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:51:06 +0000] \"GET /questions HTTP/1.1\" 200 106\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:51:08 +0000] \"GET /questions HTTP/1.1\" 200 141\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:51:11 +0000] \"GET /questions HTTP/1.1\" 200 116\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:54:00 +0000] \"POST /getUser HTTP/1.1\" 200 133\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:54:06 +0000] \"GET /questions/Historia HTTP/1.1\" 200 110\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:54:09 +0000] \"GET /questions/Arte%20e%20Literatura HTTP/1.1\" 200 116\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:54:10 +0000] \"GET /questions/Arte%20e%20Literatura HTTP/1.1\" 200 116\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:54:12 +0000] \"GET /questions/Arte%20e%20Literatura HTTP/1.1\" 200 116\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:54:14 +0000] \"GET /questions/Arte%20e%20Literatura HTTP/1.1\" 200 116\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:54:18 +0000] \"GET /questions HTTP/1.1\" 200 110\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:54:23 +0000] \"GET /questions HTTP/1.1\" 200 110\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:54:27 +0000] \"GET /questions/ HTTP/1.1\" 200 106\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:54:31 +0000] \"GET /questions HTTP/1.1\" 200 107\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:54:33 +0000] \"GET /questions/ HTTP/1.1\" 200 110\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:54:36 +0000] \"GET /questions HTTP/1.1\" 200 277\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:54:38 +0000] \"GET /questions/ HTTP/1.1\" 200 141\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:54:40 +0000] \"GET /questions/ HTTP/1.1\" 200 141\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:54:42 +0000] \"GET /questions/ HTTP/1.1\" 200 116\n","level":"info"}
+{"message":"::1 - - [12/Aug/2019:23:54:45 +0000] \"GET /questions/ HTTP/1.1\" 200 277\n","level":"info"}

@@ -44,6 +44,8 @@ module.exports = (app) => {
 
   // POST
   app.post('/questions', (req, res) => {
+    console.log(req.body);
+
     // Validate
     const errors = Question.validate(req.body);
     if (errors.length !== 0) return res.status(400).json({ errors });

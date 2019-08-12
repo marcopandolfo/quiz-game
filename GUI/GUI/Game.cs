@@ -49,7 +49,7 @@ namespace GUI
             {
                 button.BackColor = Color.Green;
                 MessageBoxService.ShowMessage("Parabéns!", "Parabéns!\nAlternativa CORRETA!");
-                NextLevel(int.Parse(lblRound.Text));
+                NextLevel(int.Parse(lblRound.Text), this.Category);
                 return;
             }
 
@@ -60,9 +60,9 @@ namespace GUI
 
         }
 
-        private void NextLevel(int round)
+        private void NextLevel(int round, string category = "")
         {
-            Question q = QuestionService.GetRandomQuestion();
+            Question q = QuestionService.GetRandomQuestion(category);
             this.Hide();
             Game game = new Game(q, this.Category, round);
             game.Closed += (s, args) => this.Close();

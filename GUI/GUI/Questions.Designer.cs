@@ -236,10 +236,10 @@
             this.comboCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboCategory.FormattingEnabled = true;
             this.comboCategory.Items.AddRange(new object[] {
-            "História",
+            "Historia",
             "Arte e Literatura",
             "Geografia",
-            "Ciência e Natureza",
+            "Ciencia e Natureza",
             "Entreterimento"});
             this.comboCategory.Location = new System.Drawing.Point(576, 527);
             this.comboCategory.Name = "comboCategory";
