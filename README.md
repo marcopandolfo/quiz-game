@@ -2,7 +2,7 @@
 
 #### Projeto em construção :hammer:
 
-Então esse é um projeto de um jogo de quiz que está sendo desenvolvido em NodeJS (express) que é a parte de API e em Windows Forms (C#) que é referente a parte de GUI do projeto. O projeto por enquanto contém dois contribuidores que são:
+Então esse é um projeto de um jogo de quiz que foi desenvolvido em NodeJS (express) que é a parte de API e em Windows Forms (C#) que é referente a parte de GUI do projeto. O projeto por enquanto contém dois contribuidores que são:
 
 [Marco He4rt](https://github.com/marcopandolfo)
 
@@ -17,9 +17,9 @@ Nós ainda estamos bem no começo do projeto, mas já está bem adiantado. Quand
 # TODO List 🚀
 
 - [x] Salvar a senha em Hash no DB
-- [ ] Implementar fim de jogo (GUI)
-- [ ] "Reiniciar" o jogo (GUI)
-- [ ] Avançar para a proxima fase (GUI)
+- [x] Implementar fim de jogo (GUI)
+- [x] "Reiniciar" o jogo (GUI)
+- [x] Avançar para a proxima fase (GUI)
 - [x] Verificar se o usuario clicou na alternativa correta (GUI)
 - [x] Exibir os pontos e a rodada na interface principal do game
 - [x] Fazer a parte de login do usuário (API)

@@ -38,6 +38,7 @@
             this.bttnMinimize = new System.Windows.Forms.Button();
             this.bttnClose = new System.Windows.Forms.Button();
             this.bttnCategoryAll = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -170,6 +171,21 @@
             this.bttnCategoryAll.UseVisualStyleBackColor = false;
             this.bttnCategoryAll.Click += new System.EventHandler(this.bttnCategoryAll_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(62)))), ((int)(((byte)(209)))));
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(377, 586);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(178, 37);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Adicionar questões";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
             // EscolherCategoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -177,6 +193,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(928, 687);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.bttnCategoryAll);
             this.Controls.Add(this.bttnClose);
             this.Controls.Add(this.bttnMinimize);
@@ -187,6 +204,7 @@
             this.Controls.Add(this.bttnCategoryC);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EscolherCategoria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EscolherCategoria";
@@ -206,5 +224,6 @@
         private System.Windows.Forms.Button bttnMinimize;
         private System.Windows.Forms.Button bttnClose;
         private System.Windows.Forms.Button bttnCategoryAll;
+        private System.Windows.Forms.Button button1;
     }
 }

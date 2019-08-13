@@ -50,5 +50,13 @@ namespace GUI
         {
             return String.IsNullOrEmpty(question) || String.IsNullOrEmpty(correct_answer) || String.IsNullOrEmpty(altB) || String.IsNullOrEmpty(altC) || String.IsNullOrEmpty(altD) || String.IsNullOrEmpty(category);
         }
+
+        private void BttnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            EscolherCategoria aux = new EscolherCategoria();
+            aux.Closed += (s, args) => this.Close();
+            aux.Show();
+        }
     }
 }

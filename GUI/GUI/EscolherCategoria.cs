@@ -105,5 +105,14 @@ namespace GUI
 
             return true;
         }
+
+        // Btn adicionar questoes
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Questions questions = new Questions();
+            questions.Closed += (s, args) => this.Close();
+            questions.Show();
+        }
     }
 }
