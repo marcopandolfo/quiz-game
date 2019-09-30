@@ -1,6 +1,5 @@
 ## Quiz-Game :smiley: :space_invader:
 
-#### Projeto em construção :hammer:
 
 Então esse é um projeto de um jogo de quiz que foi desenvolvido em NodeJS (express) que é a parte de API e em Windows Forms (C#) que é referente a parte de GUI do projeto. O projeto por enquanto contém dois contribuidores que são:
 
